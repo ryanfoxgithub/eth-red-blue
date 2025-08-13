@@ -1,0 +1,18 @@
+flowchart TD
+  subgraph Host["Ubuntu 22.04 Host"]
+    direction TB
+    Suricata["Docker Suricata (IDS)"]
+    ELK["Docker ELK stack (SIEM)"]
+    Wazuh["Docker Wazuh-manager & dashboard"]
+    QR["Python HTTP/QR server<br/>(qr_builder.py)"]
+    Ansible["Ansible control node<br/>(containment.sh)"]
+    HostRoot((" "))
+  end
+
+  subgraph Phone["Google Pixel 6 Android 14"]
+    direction TB
+    Locker["Locker.apk<br/>(custom ransomware)"]
+    PhoneRoot((" "))
+  end
+
+  HostRoot -- "isolated SSID lab-net<br/>(no Internet)" --> PhoneRoot
