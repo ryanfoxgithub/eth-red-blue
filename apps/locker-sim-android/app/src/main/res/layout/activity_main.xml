@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ Root is a NestedScrollView so the screen can scroll on small devices.
+ fillViewport="true" lets the child fill the screen height before it needs to scroll.
+-->
 <androidx.core.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -6,12 +11,26 @@
     android:layout_height="match_parent"
     android:fillViewport="true">
 
+    <!--
+      All content is stacked top-to-bottom inside a LinearLayout.
+      padding="16dp" gives comfortable edges so widgets don’t touch the screen border.
+      wrap_content height lets the parent (the scroll view) decide when to scroll.
+    -->
     <LinearLayout
         android:orientation="vertical"
         android:padding="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!--
+          Header image.
+          maxHeight limits how tall it can become on large screens.
+          adjustViewBounds keeps the aspect ratio (no squish).
+          scaleType="fitCenter" centers it and fits within available width.
+          layout_marginTop nudges it down so it clears the camera cutout/notch.
+          srcCompat loads the drawable via AppCompat for wide device support.
+          contentDescription is for accessibility (TalkBack).
+        -->
         <ImageView
             android:id="@+id/catImage"
             android:layout_width="match_parent"
@@ -19,10 +38,14 @@
             android:maxHeight="180dp"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="26dp"
             android:contentDescription="@string/cat_desc"
             app:srcCompat="@drawable/cat_evil"/>
 
+        <!--
+          Big title. Use sp for text so it respects user font-size settings.
+          gravity centers the text horizontally.
+        -->
         <TextView
             android:id="@+id/headerRyan"
             android:layout_width="match_parent"
@@ -34,6 +57,10 @@
             android:textSize="28sp"
             android:gravity="center_horizontal"/>
 
+        <!--
+          Small status line that my code updates at runtime.
+          Bold + centered to match the visual style above.
+        -->
         <TextView
             android:id="@+id/status"
             android:layout_width="match_parent"
@@ -42,16 +69,79 @@
             android:textStyle="bold"
             android:gravity="center_horizontal"/>
 
-        <Button android:id="@+id/btnImport"       android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Import photo (SAF  -->  sandbox copy)"/>
-        <Button android:id="@+id/btnSeed"         android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Seed 15 dummy files"/>
-        <Button android:id="@+id/btnList"         android:layout_width="match_parent" android:layout_height="wrap_content" android:text="List files"/>
-        <Button android:id="@+id/btnEncrypt"      android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ENCRYPT (Sandbox Only)"/>
-        <Button android:id="@+id/btnDecrypt"      android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DECRYPT"/>
-        <Button android:id="@+id/btnBeacon"       android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Send Beacons (x5 @60s)"/>
-        <Button android:id="@+id/btnPickDcim"     android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Choose DCIM folder"/>
-        <Button android:id="@+id/btnEncryptDcim"  android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ENCRYPT (Chosen folder)" android:enabled="false"/>
-        <Button android:id="@+id/btnDecryptDcim"  android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DECRYPT (Chosen folder)" android:enabled="false"/>
+        <!--
+          ACTION BUTTONS — sandbox-only workflow.
+          Each button is full-width, wraps content vertically, and uses short labels.
+        -->
+        <Button
+            android:id="@+id/btnImport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Import photo (SAF  -->  sandbox copy)"/>
 
+        <Button
+            android:id="@+id/btnSeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seed 15 dummy files"/>
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List files"/>
+
+        <Button
+            android:id="@+id/btnEncrypt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENCRYPT (Sandbox Only)"/>
+
+        <Button
+            android:id="@+id/btnDecrypt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DECRYPT"/>
+
+        <Button
+            android:id="@+id/btnBeacon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Beacons (x5 @60s)"/>
+
+        <!--
+          DCIM/Document-Tree flow:
+          1) User chooses a folder (SAF tree URI).
+          2) Encrypt/Decrypt for that chosen folder become enabled.
+          Buttons start disabled to make the flow obvious and guard against null URIs.
+        -->
+        <Button
+            android:id="@+id/btnPickDcim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose DCIM folder"/>
+
+        <Button
+            android:id="@+id/btnEncryptDcim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENCRYPT (Chosen folder)"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btnDecryptDcim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DECRYPT (Chosen folder)"
+            android:enabled="false"/>
+
+        <!--
+          Output “console”.
+          This is just a TextView used like a log area.
+          It sits inside the NestedScrollView, so the whole page scrolls if it grows.
+          maxLines caps visual height on tall screens; fixed dp height gives a stable panel.
+          scrollbars="vertical" draws a visual scrollbar (scroll is handled by the parent).
+        -->
         <TextView
             android:id="@+id/output"
             android:layout_width="match_parent"
@@ -59,5 +149,6 @@
             android:maxLines="12"
             android:paddingTop="8dp"
             android:scrollbars="vertical" />
+
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

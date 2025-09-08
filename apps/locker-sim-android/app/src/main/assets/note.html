@@ -1,12 +1,59 @@
-<!doctype html><meta charset="utf-8">
+<!doctype html>
+<!-- I declare HTML5 so the WebView renders modern, predictable HTML/CSS behavior. -->
+
+<meta charset="utf-8">
+<!-- I set UTF‑8 so punctuation like en‑dashes and curly quotes render correctly. -->
+
 <title>LockerSim Notice</title>
-<style>body{font-family:system-ui;margin:0;padding:24px}
-.box{max-width:640px;margin:auto;border:2px solid #222;padding:24px;border-radius:8px}
-h1{margin:0 0 8px 0;font-size:22px}
+<!-- The <title> shows in browser tabs; in a WebView it isn’t visible, but I keep it for completeness. -->
+
+<style>
+    /* I keep all styles inline so this file is 100% self‑contained inside assets/.
+       No external CSS means the WebView can load it offline and reproducibly. */
+
+    body {
+      /* I pick the system UI font so it looks native on Android. */
+      font-family: system-ui;
+      /* I remove the browser’s default margins and use my own spacing. */
+      margin: 0;
+      padding: 24px;
+    }
+
+    .box {
+      /* I cap the text width for readability and center it. */
+      max-width: 640px;
+      margin: auto;
+
+      /* I add a clear border, some padding, and rounded corners so it feels like a “card”. */
+      border: 2px solid #222;
+      padding: 24px;
+      border-radius: 8px;
+    }
+
+    h1 {
+      /* I tighten the heading’s spacing and set a modest size so it fits on small screens. */
+      margin: 0 0 8px 0;
+      font-size: 22px;
+    }
 </style>
+
+<!--
+I keep the markup minimal on purpose:
+ - no JavaScript (no behavior, just content) for safety and determinism
+ - plaintext paragraphs that communicate the simulation scope
+This file loads from:  file:///android_asset/note.html
+-->
+
 <div class="box">
     <h1>Files secured (SIMULATION)</h1>
+    <!-- I lead with a calm, factual heading and clearly label this as a simulation. -->
+
     <p>Your demo files in the LockerSim sandbox were encrypted with AES‑GCM for this laboratory exercise.</p>
+    <!-- I specify these are *demo* files and the context is a lab exercise, not production. -->
+
     <p>This is a simulation; no personal data was touched. To restore them, press <b>DECRYPT</b> in the app.</p>
-    <p>ATT&CK: <b>T1486 – Data Encrypted for Impact</b></p>
+    <!-- I state the safety guarantee and give the exact action to reverse it. -->
+
+    <p>ATT&amp;CK: <b>T1486 – Data Encrypted for Impact</b></p>
+    <!-- I reference the ATT&CK technique so assessors can map it in the report. -->
 </div>
