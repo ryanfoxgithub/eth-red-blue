@@ -1,6 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  strings.xml — central place for all text in my app.
+
+  Why I keep text here:
+  - Reuse: I reference the same string from layouts and code without duplicating it.
+  - Localisation: if I add other languages later, I just create values-<lang>/strings.xml.
+  - Clean UI files: layouts stay readable and don’t hard-code text.
+
+  How I reference these:
+  - In XML: android:text="@string/app_name"
+  - In code: getString(R.string.app_name)
+-->
+
 <resources>
+
+    <!-- App display name shown under the launcher icon and in system UI. -->
     <string name="app_name">LockerSim</string>
 
+    <!-- Content description for the cat ImageView.
+         I use this for accessibility (TalkBack) and for tests; it should
+         briefly describe the image, not repeat visible text. -->
     <string name="cat_desc">Cute cat photo</string>
 
 </resources>

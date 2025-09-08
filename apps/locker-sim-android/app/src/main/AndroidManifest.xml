@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- AndroidManifest.xml — app-wide config. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <!-- I need network access for OkHttp beacons. -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- I want to run a small task right after boot (BootReceiver). -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- Because my boot job waits for NetworkType.CONNECTED, I also allow
+         WorkManager to check connectivity. (If I remove the constraint, I
+         can remove this permission too.) -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- App-level options live here. No comments inside this opening tag. -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,28 +25,33 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.LockerSim">
+
+        <!-- Internal-only ransom note screen (loaded from assets/note.html). -->
         <activity
             android:name=".ransom.RansomNoteActivity"
             android:exported="false" />
+
+        <!-- Main launcher screen. exported=true is required because it has an intent-filter. -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+        <!-- Receiver that listens for BOOT_COMPLETED and schedules one beacon. -->
         <receiver
             android:name="au.edu.deakin.lab.lockersim.boot.BootReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- If I ever want pre-unlock: add android:directBootAware="true" on the
+                     receiver and include LOCKED_BOOT_COMPLETED here as well. -->
             </intent-filter>
         </receiver>
 
     </application>
-
 </manifest>
