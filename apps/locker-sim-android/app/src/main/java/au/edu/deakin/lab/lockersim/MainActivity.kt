@@ -12,6 +12,7 @@ import androidx.work.WorkManager
 import au.edu.deakin.lab.lockersim.beacon.BeaconWorker
 import au.edu.deakin.lab.lockersim.data.FileRepo
 import au.edu.deakin.lab.lockersim.databinding.ActivityMainBinding
+import au.edu.deakin.lab.lockersim.ransom.RansomNoteActivity
 import java.io.File
 
 class MainActivity : AppCompatActivity() {
@@ -51,6 +52,17 @@ class MainActivity : AppCompatActivity() {
         b.btnEncrypt.setOnClickListener {
             val n = repo.encryptAll().size
             append("Encrypted $n files (now *.gcm)")
+            if (n > 0) {
+                // Optional: drop a README into the sandbox so it appears in 'ls -l'
+                java.io.File(repo.dirPath(), "READ_ME_SIMULATION.txt")
+                    .writeText(
+                        "Your LockerSim demo files were encrypted (SIMULATION). " +
+                                "Open the app and press DECRYPT to restore."
+                    )
+
+                // Show the ransom note screen
+                startActivity(android.content.Intent(this, RansomNoteActivity::class.java))
+            }
         }
         b.btnDecrypt.setOnClickListener {
             val n = repo.decryptAll().size
