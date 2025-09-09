@@ -1,0 +1,2 @@
+47: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast state DOWN group default qlen 1000
+    link/ether a2:a6:8e:93:06:ed brd ff:ff:ff:ff:ff:ff
