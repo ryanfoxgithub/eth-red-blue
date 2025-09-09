@@ -1,0 +1,33 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable cat_evil
+drawable fire
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable main_cat
+id btnBeacon
+id btnDecrypt
+id btnDecryptDcim
+id btnEncrypt
+id btnEncryptDcim
+id btnImport
+id btnList
+id btnPickDcim
+id btnSeed
+id catImage
+id headerRyan
+id output
+id status
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_background
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+string cat_desc
+style Base.Theme.LockerSim
+style Theme.LockerSim
+xml backup_rules
+xml data_extraction_rules
