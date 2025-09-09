@@ -1,0 +1,15 @@
+--------- beginning of system
+09-07 07:33:18.229 I/BootReceiver( 1253): Copying /sys/fs/pstore/console-ramoops-0 to DropBox (SYSTEM_LAST_KMSG)
+09-07 07:33:18.246 I/BootReceiver( 1253): Copying audit failures to DropBox
+09-07 07:33:18.251 I/BootReceiver( 1253): Copied 0 worth of audits to DropBox
+09-07 07:33:18.259 I/BootReceiver( 1253): Checking for fsck errors
+09-07 07:33:18.259 I/BootReceiver( 1253): fs_stat, partition:persist stat:0x3
+09-07 07:33:18.259 I/BootReceiver( 1253): fs_stat, partition:efs stat:0x3
+09-07 07:33:18.259 I/BootReceiver( 1253): fs_stat, partition:efs_backup stat:0x3
+09-07 07:33:18.259 I/BootReceiver( 1253): fs_stat, partition:modem_userdata stat:0x3
+09-07 07:33:18.259 I/BootReceiver( 1253): fs_stat, partition:modem_b stat:0x3
+09-07 07:33:18.259 I/BootReceiver( 1253): fs_stat, partition:userdata stat:0x0
+--------- beginning of main
+09-07 07:33:30.227 D/BootReceiver( 6049): Boot broadcast received: android.intent.action.BOOT_COMPLETED
+09-07 07:33:31.475 D/BeaconWorker( 6049): Beacon 0 -> 200
+09-07 07:33:31.476 D/BeaconWorker( 6049): Beacon 0 -> 200

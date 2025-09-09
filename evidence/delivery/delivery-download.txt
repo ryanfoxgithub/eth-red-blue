@@ -1,0 +1,3 @@
+{"ts": 1757249292693, "type": "download", "path": "/app-debug.apk", "remote": "10.42.0.201", "size": 15621377}
+{"ts": 1757249316674, "type": "download", "path": "/app-debug.apk", "remote": "10.42.0.201", "size": 15621377}
+{"ts": 1757249333280, "type": "download", "path": "/app-debug.apk", "remote": "10.42.0.201", "size": 15621377}
