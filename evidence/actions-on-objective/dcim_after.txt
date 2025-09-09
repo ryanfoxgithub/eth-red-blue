@@ -1,0 +1,7 @@
+total 10596
+-rw-rw---- 1 u0_a253 media_rw 2909866 2025-09-08 08:27 PXL_20250906_094126788.jpg.gcm
+-rw-rw---- 1 u0_a253 media_rw 2170552 2025-09-08 08:27 PXL_20250906_094127190.jpg.gcm
+-rw-rw---- 1 u0_a253 media_rw 3206739 2025-09-08 08:27 PXL_20250906_094134941.jpg.gcm
+-rw-rw---- 1 u0_a253 media_rw 1239882 2025-09-08 08:27 PXL_20250908_120847286.jpg.gcm
+-rw-rw---- 1 u0_a253 media_rw 1313864 2025-09-08 08:27 PXL_20250908_120851594.jpg.gcm
+-rw-rw---- 1 u0_a253 media_rw      99 2025-09-08 08:27 READ_ME_SIMULATION.txt
