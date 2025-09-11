@@ -3,13 +3,13 @@
 # The design is deliberately tiny and dependency‑free so I can run it anywhere.
 
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler  # stdlib HTTP server
-import argparse, os, json, time, mimetypes                           # small stdlib helpers
+import argparse, os, json, time, mimetypes, sys                      # small stdlib helpers
 
 # Where I write JSON Lines logs (one JSON object per line).
 LOG_PATH = "beacons.jsonl"
 
 # Default filename I expose at /app-debug.apk (can be overridden by --apk).
-DEFAULT_APK = "../apps/locker-sim-android/app/build/outputs/apk/debug/app-debug.apk"
+DEFAULT_APK = "../../apps/locker-sim-android/app/build/outputs/apk/debug/app-debug.apk"
 
 
 def log_event(evt: dict):
@@ -29,6 +29,17 @@ def log_event(evt: dict):
 
     with open(LOG_PATH, "a", encoding="utf-8") as f:
         f.write(line + "\n")
+
+# Quiets expected client disconnects
+class QuietHTTPServer(ThreadingHTTPServer):
+    daemon_threads = True  # let threads die on their own without join noise
+    def handle_error(self, request, client_address):
+        exc = sys.exc_info()[1]
+        if isinstance(exc, (BrokenPipeError, ConnectionResetError, TimeoutError)):
+            # quietly ignore common disconnects
+            return
+        # anything else: keep default traceback
+        super().handle_error(request, client_address)
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -156,7 +167,7 @@ def main():
     mimetypes.add_type("application/vnd.android.package-archive", ".apk")
 
     # ThreadingHTTPServer handles each connection in a new thread.
-    httpd = ThreadingHTTPServer(("0.0.0.0", args.port), Handler)
+    httpd = QuietHTTPServer(("0.0.0.0", args.port), Handler)
     print(f"[+] Serving on 0.0.0.0:{args.port}")
     if Handler.apk_path:
         print(f"[+] APK route: /app-debug.apk -> {Handler.apk_path} "
