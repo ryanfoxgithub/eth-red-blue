@@ -14,3 +14,5 @@
 {"ts": 1757493486869, "type": "beacon", "path": "/beacon", "remote": "10.42.0.201", "user_agent": "Locker-Beacon/1.0 (SIMULATION)", "body": {"model": "Pixel 6a", "sdkInt": 36, "status": "encrypted", "nonce": 1757493486728}}
 {"ts": 1757493582719, "type": "download", "path": "/app-debug.apk", "remote": "10.42.0.201", "size": 16605159}
 {"ts": 1757493682326, "type": "download", "path": "/app-debug.apk", "remote": "10.42.0.201", "size": 16605159}
+{"ts": 1757594365127, "type": "beacon", "path": "/beacon", "remote": "10.42.0.201", "user_agent": "Locker-Beacon/1.0 (SIMULATION)", "body": {"model": "Pixel 6a", "sdkInt": 36, "status": "encrypted", "nonce": 1757594365033}}
+{"ts": 1757594782139, "type": "download", "path": "/app-debug.apk", "remote": "10.42.0.201", "size": 16605159}
