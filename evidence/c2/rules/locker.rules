@@ -1,0 +1,7 @@
+alert tls any any -> $HOME_NET 8443 (
+  msg:"LockerSim TLS beacon (to lab host)";
+  flow:to_server,established;
+  tls.sni; content:"lab.lan"; nocase;
+  classtype:command-and-control;
+  sid:4200002; rev:2;
+)
