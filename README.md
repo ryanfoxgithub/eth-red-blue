@@ -3,3 +3,5 @@ Repo for docs (report, slides, ATT&CK), infra notes, detection rules, scripts (Q
 
 - See docs/arch.mmd for the Mermaid architecture.
 - See docs/timeline.md for milestones & due dates.
+
+# TODO: EDIT & UPDATE THIS
