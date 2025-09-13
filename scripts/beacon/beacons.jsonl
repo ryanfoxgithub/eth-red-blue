@@ -16,3 +16,14 @@
 {"ts": 1757493682326, "type": "download", "path": "/app-debug.apk", "remote": "10.42.0.201", "size": 16605159}
 {"ts": 1757594365127, "type": "beacon", "path": "/beacon", "remote": "10.42.0.201", "user_agent": "Locker-Beacon/1.0 (SIMULATION)", "body": {"model": "Pixel 6a", "sdkInt": 36, "status": "encrypted", "nonce": 1757594365033}}
 {"ts": 1757594782139, "type": "download", "path": "/app-debug.apk", "remote": "10.42.0.201", "size": 16605159}
+{"ts": 1757720152188, "type": "download", "path": "/app-debug.apk", "remote": "10.42.0.201", "size": 16605159}
+{"ts": 1757720158116, "type": "beacon", "path": "/beacon", "remote": "10.42.0.201", "user_agent": "Locker-Beacon/1.0 (SIMULATION)", "body": {"model": "Pixel 6a", "sdkInt": 36, "status": "encrypted", "nonce": 1757720158249}}
+{"ts": 1757720218226, "type": "beacon", "path": "/beacon", "remote": "10.42.0.201", "user_agent": "Locker-Beacon/1.0 (SIMULATION)", "body": {"model": "Pixel 6a", "sdkInt": 36, "status": "encrypted", "nonce": 1757720218341}}
+{"ts": 1757720278318, "type": "beacon", "path": "/beacon", "remote": "10.42.0.201", "user_agent": "Locker-Beacon/1.0 (SIMULATION)", "body": {"model": "Pixel 6a", "sdkInt": 36, "status": "encrypted", "nonce": 1757720278454}}
+{"ts": 1757720338386, "type": "beacon", "path": "/beacon", "remote": "10.42.0.201", "user_agent": "Locker-Beacon/1.0 (SIMULATION)", "body": {"model": "Pixel 6a", "sdkInt": 36, "status": "encrypted", "nonce": 1757720338547}}
+{"ts": 1757720398493, "type": "beacon", "path": "/beacon", "remote": "10.42.0.201", "user_agent": "Locker-Beacon/1.0 (SIMULATION)", "body": {"model": "Pixel 6a", "sdkInt": 36, "status": "encrypted", "nonce": 1757720398621}}
+{"ts": 1757720481898, "type": "beacon", "path": "/beacon", "remote": "10.42.0.201", "user_agent": "Locker-Beacon/1.0 (SIMULATION)", "body": {"model": "Pixel 6a", "sdkInt": 36, "status": "encrypted", "nonce": 1757720482094}}
+{"ts": 1757720541979, "type": "beacon", "path": "/beacon", "remote": "10.42.0.201", "user_agent": "Locker-Beacon/1.0 (SIMULATION)", "body": {"model": "Pixel 6a", "sdkInt": 36, "status": "encrypted", "nonce": 1757720542130}}
+{"ts": 1757720602022, "type": "beacon", "path": "/beacon", "remote": "10.42.0.201", "user_agent": "Locker-Beacon/1.0 (SIMULATION)", "body": {"model": "Pixel 6a", "sdkInt": 36, "status": "encrypted", "nonce": 1757720602210}}
+{"ts": 1757720662130, "type": "beacon", "path": "/beacon", "remote": "10.42.0.201", "user_agent": "Locker-Beacon/1.0 (SIMULATION)", "body": {"model": "Pixel 6a", "sdkInt": 36, "status": "encrypted", "nonce": 1757720662251}}
+{"ts": 1757720722242, "type": "beacon", "path": "/beacon", "remote": "10.42.0.201", "user_agent": "Locker-Beacon/1.0 (SIMULATION)", "body": {"model": "Pixel 6a", "sdkInt": 36, "status": "encrypted", "nonce": 1757720722363}}

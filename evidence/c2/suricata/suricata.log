@@ -1,0 +1,138 @@
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Notice: suricata: This is Suricata version 7.0.8 RELEASE running in USER mode
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Info: cpu: CPUs/cores online: 4
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Info: suricata: Setting engine mode to IDS mode by default
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Info: exception-policy: master exception-policy set to: auto
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Info: logopenfile: fast output device (regular) initialized: fast.log
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Info: logopenfile: stats output device (regular) initialized: stats.log
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Error: detect-parse: Signature missing required value "sid".
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Error: detect: error parsing signature "alert tls any any -> $HOME_NET 8443 (" from file ../rules/locker.rules at line 1
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Error: detect-parse: no rule options.
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Error: detect: error parsing signature ")" from file ../rules/locker.rules at line 7
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Warning: detect: 1 rule files specified, but no rules were loaded!
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Info: unix-manager: unix socket '/var/run/suricata-command.socket'
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Warning: unix-manager: Unix socket: UNIX socket bind(/var/run/suricata-command.socket) error: Address already in use
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Warning: unix-manager: Unable to create unix command socket
+[11497 - RX#01] 2025-09-13 09:52:54 Info: pcap: Starting file run for ../locker_beacon.pcapng
+[11497 - RX#01] 2025-09-13 09:52:54 Info: pcap: pcap file ../locker_beacon.pcapng end of file reached (pcap err code 0)
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Notice: threads: Threads created -> RX: 1 W: 4 FM: 1 FR: 1   Engine started.
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Notice: suricata: Signal Received.  Stopping engine.
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Info: suricata: time elapsed 0.041s
+[11497 - RX#01] 2025-09-13 09:52:54 Notice: pcap: read 1 file, 101 packets, 10718 bytes
+[11496 - Suricata-Main] 2025-09-13 09:52:54 Info: counters: Alerts: 0
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Notice: suricata: This is Suricata version 7.0.8 RELEASE running in USER mode
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Info: cpu: CPUs/cores online: 4
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Info: suricata: Setting engine mode to IDS mode by default
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Info: exception-policy: master exception-policy set to: auto
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Info: logopenfile: fast output device (regular) initialized: fast.log
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Info: logopenfile: stats output device (regular) initialized: stats.log
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Warning: detect: No rule files match the pattern /var/lib/suricata/rules/suricata.rules
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Warning: detect: 1 rule files specified, but no rules were loaded!
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[11740 - RX#01] 2025-09-13 10:17:05 Info: pcap: using bpf-filter " "
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Info: unix-manager: unix socket '/var/run/suricata-command.socket'
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Warning: unix-manager: Unix socket: UNIX socket bind(/var/run/suricata-command.socket) error: Address already in use
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Warning: unix-manager: Unable to create unix command socket
+[11740 - RX#01] 2025-09-13 10:17:05 Info: pcap: Starting file run for ../locker_beacon.pcapng
+[11740 - RX#01] 2025-09-13 10:17:05 Info: pcap: pcap file ../locker_beacon.pcapng end of file reached (pcap err code 0)
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Notice: threads: Threads created -> RX: 1 W: 4 FM: 1 FR: 1   Engine started.
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Notice: suricata: Signal Received.  Stopping engine.
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Info: suricata: time elapsed 0.041s
+[11740 - RX#01] 2025-09-13 10:17:05 Notice: pcap: read 1 file, 101 packets, 10718 bytes
+[11739 - Suricata-Main] 2025-09-13 10:17:05 Info: counters: Alerts: 0
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Notice: suricata: This is Suricata version 7.0.8 RELEASE running in USER mode
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Info: cpu: CPUs/cores online: 4
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Info: suricata: Setting engine mode to IDS mode by default
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Info: exception-policy: master exception-policy set to: auto
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Info: logopenfile: fast output device (regular) initialized: fast.log
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Info: logopenfile: stats output device (regular) initialized: stats.log
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Error: detect-parse: Signature missing required value "sid".
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Error: detect: error parsing signature "alert http any any -> 10.42.0.1 8000 (" from file ../rules/locker.rules at line 2
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Error: detect-parse: no rule options.
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Error: detect: error parsing signature ")" from file ../rules/locker.rules at line 9
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Error: detect-parse: Signature missing required value "sid".
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Error: detect: error parsing signature "alert tls any any -> 10.42.0.1 8443 (" from file ../rules/locker.rules at line 12
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Error: detect-parse: no rule options.
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Error: detect: error parsing signature ")" from file ../rules/locker.rules at line 17
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Warning: detect: 1 rule files specified, but no rules were loaded!
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[11755 - RX#01] 2025-09-13 10:17:33 Info: pcap: Starting file run for ../locker_beacon.pcapng
+[11755 - RX#01] 2025-09-13 10:17:33 Info: pcap: pcap file ../locker_beacon.pcapng end of file reached (pcap err code 0)
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Notice: threads: Threads created -> RX: 1 W: 4 FM: 1 FR: 1   Engine started.
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Notice: suricata: Signal Received.  Stopping engine.
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Info: suricata: time elapsed 0.040s
+[11755 - RX#01] 2025-09-13 10:17:33 Notice: pcap: read 1 file, 101 packets, 10718 bytes
+[11754 - Suricata-Main] 2025-09-13 10:17:33 Info: counters: Alerts: 0
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Notice: suricata: This is Suricata version 7.0.8 RELEASE running in USER mode
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Info: cpu: CPUs/cores online: 4
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Info: suricata: Setting engine mode to IDS mode by default
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Info: exception-policy: master exception-policy set to: auto
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Info: logopenfile: fast output device (regular) initialized: fast.log
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Info: logopenfile: stats output device (regular) initialized: stats.log
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Error: detect-parse: Signature missing required value "sid".
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Error: detect: error parsing signature "alert http any any -> 10.42.0.1 8000 (" from file ../rules/locker.rules at line 2
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Error: detect-parse: no rule options.
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Error: detect: error parsing signature ")" from file ../rules/locker.rules at line 9
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Error: detect-parse: Signature missing required value "sid".
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Error: detect: error parsing signature "alert tls any any -> 10.42.0.1 8443 (" from file ../rules/locker.rules at line 12
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Error: detect-parse: no rule options.
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Error: detect: error parsing signature ")" from file ../rules/locker.rules at line 17
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Warning: detect: 1 rule files specified, but no rules were loaded!
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[11767 - RX#01] 2025-09-13 10:17:48 Info: pcap: Starting file run for ../locker_beacon.pcapng
+[11767 - RX#01] 2025-09-13 10:17:48 Info: pcap: pcap file ../locker_beacon.pcapng end of file reached (pcap err code 0)
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Notice: threads: Threads created -> RX: 1 W: 4 FM: 1 FR: 1   Engine started.
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Notice: suricata: Signal Received.  Stopping engine.
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Info: suricata: time elapsed 0.041s
+[11767 - RX#01] 2025-09-13 10:17:48 Notice: pcap: read 1 file, 101 packets, 10718 bytes
+[11766 - Suricata-Main] 2025-09-13 10:17:48 Info: counters: Alerts: 0
+[12768 - Suricata-Main] 2025-09-13 12:36:25 Notice: suricata: This is Suricata version 7.0.8 RELEASE running in USER mode
+[12768 - Suricata-Main] 2025-09-13 12:36:25 Info: cpu: CPUs/cores online: 4
+[12768 - Suricata-Main] 2025-09-13 12:36:25 Info: suricata: Setting engine mode to IDS mode by default
+[12768 - Suricata-Main] 2025-09-13 12:36:25 Info: exception-policy: master exception-policy set to: auto
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Info: logopenfile: fast output device (regular) initialized: fast.log
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Info: logopenfile: stats output device (regular) initialized: stats.log
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Error: detect-parse: Signature missing required value "sid".
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Error: detect: error parsing signature "alert http any any -> 10.42.0.1 8000 (" from file ../rules/locker.rules at line 2
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Error: detect-parse: no rule options.
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Error: detect: error parsing signature ")" from file ../rules/locker.rules at line 9
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Error: detect-parse: Signature missing required value "sid".
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Error: detect: error parsing signature "alert tls any any -> 10.42.0.1 8443 (" from file ../rules/locker.rules at line 12
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Error: detect-parse: no rule options.
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Error: detect: error parsing signature ")" from file ../rules/locker.rules at line 17
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Warning: detect: 1 rule files specified, but no rules were loaded!
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[12769 - RX#01] 2025-09-13 12:36:26 Info: pcap: Starting file run for ../locker_beacon.pcapng
+[12769 - RX#01] 2025-09-13 12:36:26 Info: pcap: pcap file ../locker_beacon.pcapng end of file reached (pcap err code 0)
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Notice: threads: Threads created -> RX: 1 W: 4 FM: 1 FR: 1   Engine started.
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Notice: suricata: Signal Received.  Stopping engine.
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Info: suricata: time elapsed 0.040s
+[12769 - RX#01] 2025-09-13 12:36:26 Notice: pcap: read 1 file, 101 packets, 10718 bytes
+[12768 - Suricata-Main] 2025-09-13 12:36:26 Info: counters: Alerts: 0
+[13043 - Suricata-Main] 2025-09-13 13:11:26 Notice: suricata: This is Suricata version 7.0.8 RELEASE running in USER mode
+[13043 - Suricata-Main] 2025-09-13 13:11:26 Info: cpu: CPUs/cores online: 4
+[13043 - Suricata-Main] 2025-09-13 13:11:26 Info: suricata: Setting engine mode to IDS mode by default
+[13043 - Suricata-Main] 2025-09-13 13:11:26 Info: exception-policy: master exception-policy set to: auto
+[13043 - Suricata-Main] 2025-09-13 13:11:26 Info: logopenfile: fast output device (regular) initialized: fast.log
+[13043 - Suricata-Main] 2025-09-13 13:11:26 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[13043 - Suricata-Main] 2025-09-13 13:11:26 Info: logopenfile: stats output device (regular) initialized: stats.log
+[13043 - Suricata-Main] 2025-09-13 13:11:26 Info: detect: 1 rule files processed. 1 rules successfully loaded, 0 rules failed, 0
+[13043 - Suricata-Main] 2025-09-13 13:11:26 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[13043 - Suricata-Main] 2025-09-13 13:11:26 Info: detect: 1 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[13044 - RX#01] 2025-09-13 13:11:26 Info: pcap: Starting file run for ../locker_beacon.pcapng
+[13043 - Suricata-Main] 2025-09-13 13:11:26 Notice: threads: Threads created -> RX: 1 W: 4 FM: 1 FR: 1   Engine started.
+[13044 - RX#01] 2025-09-13 13:11:26 Info: pcap: pcap file ../locker_beacon.pcapng end of file reached (pcap err code 0)
+[13043 - Suricata-Main] 2025-09-13 13:11:26 Notice: suricata: Signal Received.  Stopping engine.
+[13043 - Suricata-Main] 2025-09-13 13:11:26 Info: suricata: time elapsed 0.048s
+[13044 - RX#01] 2025-09-13 13:11:26 Notice: pcap: read 1 file, 101 packets, 10718 bytes
+[13043 - Suricata-Main] 2025-09-13 13:11:26 Info: counters: Alerts: 9
