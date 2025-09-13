@@ -1,0 +1,5 @@
+NAME                            IMAGE                                                  COMMAND                  SERVICE         CREATED             STATUS             PORTS
+blue-pipeline-elasticsearch-1   docker.elastic.co/elasticsearch/elasticsearch:8.14.0   "/bin/tini -- /usr/l…"   elasticsearch   About an hour ago   Up About an hour   0.0.0.0:9200->9200/tcp, [::]:9200->9200/tcp, 9300/tcp
+blue-pipeline-filebeat-1        docker.elastic.co/beats/filebeat:8.14.0                "/usr/bin/tini -- /u…"   filebeat        About an hour ago   Up About an hour   
+blue-pipeline-kibana-1          docker.elastic.co/kibana/kibana:8.14.0                 "/bin/tini -- /usr/l…"   kibana          About an hour ago   Up About an hour   0.0.0.0:5601->5601/tcp, [::]:5601->5601/tcp
+blue-pipeline-suricata-1        jasonish/suricata:7.0.11                               "/docker-entrypoint.…"   suricata        About an hour ago   Up About an hour   
