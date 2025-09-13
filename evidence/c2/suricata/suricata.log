@@ -136,3 +136,23 @@
 [13043 - Suricata-Main] 2025-09-13 13:11:26 Info: suricata: time elapsed 0.048s
 [13044 - RX#01] 2025-09-13 13:11:26 Notice: pcap: read 1 file, 101 packets, 10718 bytes
 [13043 - Suricata-Main] 2025-09-13 13:11:26 Info: counters: Alerts: 9
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Notice: suricata: This is Suricata version 7.0.8 RELEASE running in USER mode
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Info: cpu: CPUs/cores online: 4
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Info: suricata: Setting engine mode to IDS mode by default
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Info: exception-policy: master exception-policy set to: auto
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Info: logopenfile: fast output device (regular) initialized: fast.log
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Info: logopenfile: stats output device (regular) initialized: stats.log
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Info: detect: 1 rule files processed. 1 rules successfully loaded, 0 rules failed, 0
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Info: detect: 1 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Info: unix-manager: unix socket '/var/run/suricata-command.socket'
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Warning: unix-manager: Unix socket: UNIX socket bind(/var/run/suricata-command.socket) error: Address already in use
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Warning: unix-manager: Unable to create unix command socket
+[13764 - RX#01] 2025-09-13 14:52:34 Info: pcap: Starting file run for ../locker_beacon.pcapng
+[13764 - RX#01] 2025-09-13 14:52:34 Info: pcap: pcap file ../locker_beacon.pcapng end of file reached (pcap err code 0)
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Notice: threads: Threads created -> RX: 1 W: 4 FM: 1 FR: 1   Engine started.
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Notice: suricata: Signal Received.  Stopping engine.
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Info: suricata: time elapsed 0.039s
+[13764 - RX#01] 2025-09-13 14:52:34 Notice: pcap: read 1 file, 101 packets, 10718 bytes
+[13763 - Suricata-Main] 2025-09-13 14:52:34 Info: counters: Alerts: 9

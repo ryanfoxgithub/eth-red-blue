@@ -1,0 +1,92 @@
+%YAML 1.1
+---
+
+# ========= Suricata 7 – Lab IDS (Docker) =========
+# Validate before (re)start:
+#   suricata -T -c /etc/suricata/suricata.yaml
+
+sensor-name: lab-suricata-1
+
+# ---- Network variables ----
+vars:
+  address-groups:
+    HOME_NET: "[10.42.0.0/24]"
+    EXTERNAL_NET: "!$HOME_NET"
+  port-groups:
+    HTTP_PORTS: "80,8000,8080,8081,8888"
+    TLS_PORTS: "443,8443"
+
+# ---- Choose ONE packet input ----
+# Simple & reliable in labs: sniff everything the host sees
+pcap:
+  - interface: any
+    checksum-checks: auto
+
+threading:
+  set-cpu-affinity: no   # let Suricata auto-size threads in the container
+
+# ---- Rules (local only is fine for the unit) ----
+default-rule-path: /etc/suricata/rules
+rule-files:
+  - local.rules            # mount/ship your custom rules here (e.g., beacon SID 420001)
+
+classification-file: /etc/suricata/classification.config
+reference-config-file: /etc/suricata/reference.config
+
+# ---- App-layer protocol parsing we actually use ----
+app-layer:
+  protocols:
+    http:
+      enabled: yes
+      libhtp:
+        default-config:
+          personality: IDS
+          request-body-limit: 100kb
+          response-body-limit: 100kb
+    http2:
+      enabled: yes
+    tls:
+      enabled: yes
+    dns:
+      enabled: yes
+
+# ---- Outputs (EVE JSON consumed by Filebeat) ----
+outputs:
+  - eve-log:
+      enabled: yes
+      filetype: regular
+      filename: /var/log/suricata/eve.json
+      community-id: true        # adds community_id used by many SIEM parsers
+      types:
+        - alert:
+            tagged-packets: false
+        - http
+        - http2
+        - dns
+        - tls
+        - flow
+        - stats                  # periodic counters (good for health)
+  - fast:
+      enabled: yes
+      filename: /var/log/suricata/fast.log
+
+logging:
+  default-log-level: notice
+  outputs:
+    - file:
+        enabled: yes
+        filename: /var/log/suricata/suricata.log
+
+# Conservative, lab-friendly caps
+stream:
+  reassembly:
+    memcap: 256mb
+    depth: 1mb
+
+tcp:
+  reassembly:
+    memcap: 256mb
+
+stats:
+  enabled: yes
+  interval: 60
