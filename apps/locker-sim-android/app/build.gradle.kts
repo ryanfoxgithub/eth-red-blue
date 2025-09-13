@@ -42,6 +42,16 @@ android {
         viewBinding = true
     }
 
+    signingConfigs {
+        create("release") {
+            // keystore is at app/keystore/locker-lab.jks
+            storeFile = file("keystore/locker-lab.jks")
+            storePassword = providers.gradleProperty("LAB_STORE_PASSWORD").get()
+            keyAlias = "locker"
+            keyPassword = providers.gradleProperty("LAB_KEY_PASSWORD").get()
+        }
+    }
+
     buildTypes {
         // Release build configuration (debug is auto‑generated)
         release {
@@ -50,6 +60,8 @@ android {
             isMinifyEnabled = false
 
             // If I enable minify, these are the ProGuard/R8 rules to use.
+            // Tied in signing too
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
