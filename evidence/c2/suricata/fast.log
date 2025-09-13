@@ -7,3 +7,12 @@
 09/13/2025-09:43:22.026793  [**] [1:4200001:7] LockerSim HTTP beacon (UA+path) [**] [Classification: (null)] [Priority: 3] {TCP} 10.42.0.201:33748 -> 10.42.0.1:8000
 09/13/2025-09:42:21.984911  [**] [1:4200001:7] LockerSim HTTP beacon (UA+path) [**] [Classification: (null)] [Priority: 3] {TCP} 10.42.0.201:45394 -> 10.42.0.1:8000
 09/13/2025-09:44:22.137104  [**] [1:4200001:7] LockerSim HTTP beacon (UA+path) [**] [Classification: (null)] [Priority: 3] {TCP} 10.42.0.201:45774 -> 10.42.0.1:8000
+09/13/2025-09:37:58.362859  [**] [1:4200001:7] LockerSim HTTP beacon (UA+path) [**] [Classification: (null)] [Priority: 3] {TCP} 10.42.0.201:39516 -> 10.42.0.1:8000
+09/13/2025-09:39:58.503883  [**] [1:4200001:7] LockerSim HTTP beacon (UA+path) [**] [Classification: (null)] [Priority: 3] {TCP} 10.42.0.201:57818 -> 10.42.0.1:8000
+09/13/2025-09:41:21.907758  [**] [1:4200001:7] LockerSim HTTP beacon (UA+path) [**] [Classification: (null)] [Priority: 3] {TCP} 10.42.0.201:43172 -> 10.42.0.1:8000
+09/13/2025-09:42:21.984911  [**] [1:4200001:7] LockerSim HTTP beacon (UA+path) [**] [Classification: (null)] [Priority: 3] {TCP} 10.42.0.201:45394 -> 10.42.0.1:8000
+09/13/2025-09:38:58.398894  [**] [1:4200001:7] LockerSim HTTP beacon (UA+path) [**] [Classification: (null)] [Priority: 3] {TCP} 10.42.0.201:49240 -> 10.42.0.1:8000
+09/13/2025-09:44:22.137104  [**] [1:4200001:7] LockerSim HTTP beacon (UA+path) [**] [Classification: (null)] [Priority: 3] {TCP} 10.42.0.201:45774 -> 10.42.0.1:8000
+09/13/2025-09:45:22.250954  [**] [1:4200001:7] LockerSim HTTP beacon (UA+path) [**] [Classification: (null)] [Priority: 3] {TCP} 10.42.0.201:60786 -> 10.42.0.1:8000
+09/13/2025-09:36:58.234334  [**] [1:4200001:7] LockerSim HTTP beacon (UA+path) [**] [Classification: (null)] [Priority: 3] {TCP} 10.42.0.201:37746 -> 10.42.0.1:8000
+09/13/2025-09:43:22.026793  [**] [1:4200001:7] LockerSim HTTP beacon (UA+path) [**] [Classification: (null)] [Priority: 3] {TCP} 10.42.0.201:33748 -> 10.42.0.1:8000

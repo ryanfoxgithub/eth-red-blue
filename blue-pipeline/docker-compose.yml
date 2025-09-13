@@ -1,0 +1,52 @@
+x-elastic-version: &elastic_version "8.14.0"   # use a local 8.x you have; change in one place
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:${ELASTIC_VERSION:-8.14.0}
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false          # lab only; simplifies Kibana login
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    ulimits:
+      memlock: { soft: -1, hard: -1 }
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    ports: ["9200:9200"]
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:${ELASTIC_VERSION:-8.14.0}
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    depends_on: [elasticsearch]
+    ports: ["5601:5601"]
+
+  # Suricata sniffs the HOST interface (usb Wi‑Fi AP)
+  suricata:
+    image: jasonish/suricata:${SURICATA_TAG:-7.0.11}
+    network_mode: host                       # needed to see the host’s AP interface
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_NICE
+    privileged: true                         # gives pcap/af-packet access
+    command: ["-i","${AP_IFACE}","-vv"]
+    volumes:
+      - ./suricata/log:/var/log/suricata
+
+  # Filebeat parses Suricata EVE JSON and ships to ES
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:${ELASTIC_VERSION:-8.14.0}
+    depends_on:
+      elasticsearch:
+        condition: service_started
+      suricata:
+        condition: service_started
+    restart: unless-stopped
+    user: root
+    command: ["--strict.perms=false", "-e"]
+    volumes:
+      - ./filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - ./suricata/log:/var/log/suricata:ro
+
+volumes:
+  esdata:

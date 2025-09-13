@@ -1,0 +1,24 @@
+%YAML 1.1
+---
+
+# Keep the default detect-engine etc. Minimal edits below.
+
+af-packet:
+  - interface: ${AP_IFACE}
+    cluster-id: 99
+    cluster-type: cluster_flow
+    defrag: yes
+
+outputs:
+  - eve-log:
+      enabled: yes
+      filetype: regular
+      filename: /var/log/suricata/eve.json
+      types:
+        - alert
+        - flow
+        - http
+        - dns
+        - tls
+
+# Rule sources are not essential for HTTP/DNS logs. You can add rules later.
