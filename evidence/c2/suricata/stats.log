@@ -1,0 +1,271 @@
+------------------------------------------------------------------------------------
+Date: 9/13/2025 -- 09:52:54 (uptime: 0d, 00h 00m 00s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+decoder.pkts                                  | Total                     | 101
+decoder.bytes                                 | Total                     | 10718
+decoder.ipv4                                  | Total                     | 101
+decoder.ethernet                              | Total                     | 101
+decoder.tcp                                   | Total                     | 101
+tcp.syn                                       | Total                     | 9
+tcp.synack                                    | Total                     | 9
+tcp.rst                                       | Total                     | 1
+decoder.avg_pkt_size                          | Total                     | 106
+decoder.max_pkt_size                          | Total                     | 346
+flow.total                                    | Total                     | 10
+flow.tcp                                      | Total                     | 10
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 3
+flow.wrk.flows_evicted_needs_work             | Total                     | 1
+flow.wrk.flows_evicted_pkt_inject             | Total                     | 2
+flow.wrk.flows_injected                       | Total                     | 1
+tcp.sessions                                  | Total                     | 9
+tcp.ssn_from_pool                             | Total                     | 9
+tcp.segment_from_cache                        | Total                     | 16
+tcp.segment_from_pool                         | Total                     | 12
+tcp.overlap                                   | Total                     | 1
+app_layer.flow.http                           | Total                     | 9
+app_layer.tx.http                             | Total                     | 9
+flow.end.state.new                            | Total                     | 1
+flow.end.state.established                    | Total                     | 1
+flow.end.state.closed                         | Total                     | 8
+flow.end.tcp_state.fin_wait2                  | Total                     | 1
+flow.end.tcp_state.closed                     | Total                     | 8
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 9800
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+flow.recycler.recycled                        | Total                     | 9
+flow.recycler.queue_max                       | Total                     | 9
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7154304
+------------------------------------------------------------------------------------
+Date: 9/13/2025 -- 10:17:05 (uptime: 0d, 00h 00m 00s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+decoder.pkts                                  | Total                     | 101
+decoder.bytes                                 | Total                     | 10718
+decoder.ipv4                                  | Total                     | 101
+decoder.ethernet                              | Total                     | 101
+decoder.tcp                                   | Total                     | 101
+tcp.syn                                       | Total                     | 9
+tcp.synack                                    | Total                     | 9
+tcp.rst                                       | Total                     | 1
+decoder.avg_pkt_size                          | Total                     | 106
+decoder.max_pkt_size                          | Total                     | 346
+flow.total                                    | Total                     | 10
+flow.tcp                                      | Total                     | 10
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 3
+flow.wrk.flows_evicted_needs_work             | Total                     | 1
+flow.wrk.flows_evicted_pkt_inject             | Total                     | 2
+flow.wrk.flows_injected                       | Total                     | 1
+tcp.sessions                                  | Total                     | 9
+tcp.ssn_from_pool                             | Total                     | 9
+tcp.segment_from_cache                        | Total                     | 16
+tcp.segment_from_pool                         | Total                     | 12
+tcp.overlap                                   | Total                     | 1
+app_layer.flow.http                           | Total                     | 9
+app_layer.tx.http                             | Total                     | 9
+flow.end.state.new                            | Total                     | 1
+flow.end.state.established                    | Total                     | 1
+flow.end.state.closed                         | Total                     | 8
+flow.end.tcp_state.fin_wait2                  | Total                     | 1
+flow.end.tcp_state.closed                     | Total                     | 8
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 9800
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 1
+flow.mgr.flows_notimeout                      | Total                     | 1
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+flow.recycler.recycled                        | Total                     | 9
+flow.recycler.queue_max                       | Total                     | 9
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7154304
+------------------------------------------------------------------------------------
+Date: 9/13/2025 -- 10:17:33 (uptime: 0d, 00h 00m 00s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+decoder.pkts                                  | Total                     | 101
+decoder.bytes                                 | Total                     | 10718
+decoder.ipv4                                  | Total                     | 101
+decoder.ethernet                              | Total                     | 101
+decoder.tcp                                   | Total                     | 101
+tcp.syn                                       | Total                     | 9
+tcp.synack                                    | Total                     | 9
+tcp.rst                                       | Total                     | 1
+decoder.avg_pkt_size                          | Total                     | 106
+decoder.max_pkt_size                          | Total                     | 346
+flow.total                                    | Total                     | 10
+flow.tcp                                      | Total                     | 10
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 4
+flow.wrk.flows_evicted_needs_work             | Total                     | 1
+flow.wrk.flows_evicted_pkt_inject             | Total                     | 2
+flow.wrk.flows_injected                       | Total                     | 1
+tcp.sessions                                  | Total                     | 9
+tcp.ssn_from_pool                             | Total                     | 9
+tcp.segment_from_cache                        | Total                     | 13
+tcp.segment_from_pool                         | Total                     | 15
+tcp.overlap                                   | Total                     | 1
+app_layer.flow.http                           | Total                     | 9
+app_layer.tx.http                             | Total                     | 9
+flow.end.state.new                            | Total                     | 1
+flow.end.state.established                    | Total                     | 1
+flow.end.state.closed                         | Total                     | 8
+flow.end.tcp_state.fin_wait2                  | Total                     | 1
+flow.end.tcp_state.closed                     | Total                     | 8
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 9600
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 1
+flow.mgr.flows_notimeout                      | Total                     | 1
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+flow.recycler.recycled                        | Total                     | 9
+flow.recycler.queue_max                       | Total                     | 9
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7154304
+------------------------------------------------------------------------------------
+Date: 9/13/2025 -- 10:17:48 (uptime: 0d, 00h 00m 00s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+decoder.pkts                                  | Total                     | 101
+decoder.bytes                                 | Total                     | 10718
+decoder.ipv4                                  | Total                     | 101
+decoder.ethernet                              | Total                     | 101
+decoder.tcp                                   | Total                     | 101
+tcp.syn                                       | Total                     | 9
+tcp.synack                                    | Total                     | 9
+tcp.rst                                       | Total                     | 1
+decoder.avg_pkt_size                          | Total                     | 106
+decoder.max_pkt_size                          | Total                     | 346
+flow.total                                    | Total                     | 10
+flow.tcp                                      | Total                     | 10
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 4
+flow.wrk.flows_evicted_needs_work             | Total                     | 1
+flow.wrk.flows_evicted_pkt_inject             | Total                     | 2
+flow.wrk.flows_injected                       | Total                     | 1
+tcp.sessions                                  | Total                     | 9
+tcp.ssn_from_pool                             | Total                     | 9
+tcp.segment_from_cache                        | Total                     | 14
+tcp.segment_from_pool                         | Total                     | 14
+tcp.overlap                                   | Total                     | 1
+app_layer.flow.http                           | Total                     | 9
+app_layer.tx.http                             | Total                     | 9
+flow.end.state.new                            | Total                     | 1
+flow.end.state.established                    | Total                     | 1
+flow.end.state.closed                         | Total                     | 8
+flow.end.tcp_state.fin_wait2                  | Total                     | 1
+flow.end.tcp_state.closed                     | Total                     | 8
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 9600
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+flow.recycler.recycled                        | Total                     | 9
+flow.recycler.queue_max                       | Total                     | 9
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7154304
+------------------------------------------------------------------------------------
+Date: 9/13/2025 -- 12:36:26 (uptime: 0d, 00h 00m 00s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+decoder.pkts                                  | Total                     | 101
+decoder.bytes                                 | Total                     | 10718
+decoder.ipv4                                  | Total                     | 101
+decoder.ethernet                              | Total                     | 101
+decoder.tcp                                   | Total                     | 101
+tcp.syn                                       | Total                     | 9
+tcp.synack                                    | Total                     | 9
+tcp.rst                                       | Total                     | 1
+decoder.avg_pkt_size                          | Total                     | 106
+decoder.max_pkt_size                          | Total                     | 346
+flow.total                                    | Total                     | 10
+flow.tcp                                      | Total                     | 10
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 4
+flow.wrk.flows_evicted_needs_work             | Total                     | 1
+flow.wrk.flows_evicted_pkt_inject             | Total                     | 2
+flow.wrk.flows_injected                       | Total                     | 1
+tcp.sessions                                  | Total                     | 9
+tcp.ssn_from_pool                             | Total                     | 9
+tcp.segment_from_cache                        | Total                     | 13
+tcp.segment_from_pool                         | Total                     | 15
+tcp.overlap                                   | Total                     | 1
+app_layer.flow.http                           | Total                     | 9
+app_layer.tx.http                             | Total                     | 9
+flow.end.state.new                            | Total                     | 1
+flow.end.state.established                    | Total                     | 1
+flow.end.state.closed                         | Total                     | 8
+flow.end.tcp_state.fin_wait2                  | Total                     | 1
+flow.end.tcp_state.closed                     | Total                     | 8
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 9600
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 1
+flow.mgr.flows_notimeout                      | Total                     | 1
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+flow.recycler.recycled                        | Total                     | 9
+flow.recycler.queue_max                       | Total                     | 9
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7154304
+------------------------------------------------------------------------------------
+Date: 9/13/2025 -- 13:11:26 (uptime: 0d, 00h 00m 00s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+decoder.pkts                                  | Total                     | 101
+decoder.bytes                                 | Total                     | 10718
+decoder.ipv4                                  | Total                     | 101
+decoder.ethernet                              | Total                     | 101
+decoder.tcp                                   | Total                     | 101
+tcp.syn                                       | Total                     | 9
+tcp.synack                                    | Total                     | 9
+tcp.rst                                       | Total                     | 1
+decoder.avg_pkt_size                          | Total                     | 106
+decoder.max_pkt_size                          | Total                     | 346
+flow.total                                    | Total                     | 10
+flow.tcp                                      | Total                     | 10
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 4
+flow.wrk.flows_evicted_needs_work             | Total                     | 1
+flow.wrk.flows_evicted_pkt_inject             | Total                     | 2
+flow.wrk.flows_injected                       | Total                     | 1
+tcp.sessions                                  | Total                     | 9
+tcp.ssn_from_pool                             | Total                     | 9
+tcp.segment_from_cache                        | Total                     | 13
+tcp.segment_from_pool                         | Total                     | 15
+tcp.overlap                                   | Total                     | 1
+detect.alert                                  | Total                     | 9
+app_layer.flow.http                           | Total                     | 9
+app_layer.tx.http                             | Total                     | 9
+flow.end.state.new                            | Total                     | 1
+flow.end.state.established                    | Total                     | 1
+flow.end.state.closed                         | Total                     | 8
+flow.end.tcp_state.fin_wait2                  | Total                     | 1
+flow.end.tcp_state.closed                     | Total                     | 8
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 9800
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 2
+flow.mgr.flows_notimeout                      | Total                     | 2
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+flow.recycler.recycled                        | Total                     | 9
+flow.recycler.queue_max                       | Total                     | 9
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7154304
