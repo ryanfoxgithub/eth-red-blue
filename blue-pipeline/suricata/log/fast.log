@@ -210,3 +210,16 @@
 09/13/2025-12:52:34.150820  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:34244
 09/13/2025-12:53:34.215660  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:49968
 09/13/2025-12:54:34.279203  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:44538
+09/13/2025-12:57:33.947943  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:53562
+09/13/2025-12:58:33.997876  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:34676
+09/13/2025-12:59:34.042830  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:46956
+09/13/2025-12:59:34.315083  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:48856
+09/13/2025-13:00:34.096770  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:60256
+09/13/2025-13:05:34.149702  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:47308
+09/13/2025-13:07:33.950106  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:59922
+09/13/2025-13:07:34.071806  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:59936
+09/13/2025-13:08:57.133198  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:42826
+09/13/2025-13:09:57.175831  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:49950
+09/13/2025-13:10:57.242018  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:43592
+09/13/2025-13:11:57.312716  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:58968
+09/13/2025-13:21:59.571138  [**] [1:2034635:3] ET INFO Python BaseHTTP ServerBanner [**] [Classification: Misc activity] [Priority: 3] {TCP} 10.42.0.1:8000 -> 10.42.0.201:32798

@@ -31,7 +31,9 @@ services:
     privileged: true                         # gives pcap/af-packet access
     command: ["-i","${AP_IFACE}","-vv"]
     volumes:
-      - ./suricata/log:/var/log/suricata
+      -  /var/log/suricata:/var/log/suricata
+      - ./suricata/suricata.yaml:/etc/suricata/suricata.yaml:ro
+      - ./suricata/rules:/etc/suricata/rules:ro
 
   # Filebeat parses Suricata EVE JSON and ships to ES
   filebeat:
@@ -45,8 +47,8 @@ services:
     user: root
     command: ["--strict.perms=false", "-e"]
     volumes:
-      - ./filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
-      - ./suricata/log:/var/log/suricata:ro
+      - ./filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - /var/log/suricata:/var/log/suricata
 
 volumes:
   esdata:

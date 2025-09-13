@@ -4805,3 +4805,15 @@
 [18 - W#03-wlx9..6413] 2025-09-13 12:00:13 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
 [19 - W#04-wlx9..6413] 2025-09-13 12:00:13 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
 [1 - Suricata-Main] 2025-09-13 12:00:13 Notice: threads: Threads created -> W: 4 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-09-13 13:48:57 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-09-13 13:48:57 Info: suricata: time elapsed 6524.716s
+[21 - FR#01] 2025-09-13 13:48:57 Perf: flow-manager: 114 flows processed
+[16 - W#01-wlx9..6413] 2025-09-13 13:48:57 Perf: af-packet: wlx90de80fb6413: (W#01-wlx9..6413) kernel: Packets 4011, dropped 0
+[17 - W#02-wlx9..6413] 2025-09-13 13:48:57 Perf: af-packet: wlx90de80fb6413: (W#02-wlx9..6413) kernel: Packets 4295, dropped 0
+[18 - W#03-wlx9..6413] 2025-09-13 13:48:57 Perf: af-packet: wlx90de80fb6413: (W#03-wlx9..6413) kernel: Packets 3773, dropped 0
+[19 - W#04-wlx9..6413] 2025-09-13 13:48:57 Perf: af-packet: wlx90de80fb6413: (W#04-wlx9..6413) kernel: Packets 5022, dropped 0
+[1 - Suricata-Main] 2025-09-13 13:48:57 Info: counters: Alerts: 27
+[1 - Suricata-Main] 2025-09-13 13:48:57 Perf: ippair: ippair memory usage: 414144 bytes, maximum: 16777216
+[1 - Suricata-Main] 2025-09-13 13:48:58 Perf: host: host memory usage: 398144 bytes, maximum: 33554432
+[1 - Suricata-Main] 2025-09-13 13:48:58 Notice: device: wlx90de80fb6413: packets: 17101, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-09-13 13:48:58 Perf: ioctl: wlx90de80fb6413: restoring gro offloading
