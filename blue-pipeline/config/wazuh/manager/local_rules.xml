@@ -1,0 +1,38 @@
+<group name="local,locker,android,">
+  <!-- W1: Sideload/install events -->
+  <rule id="910110" level="8">
+    <program_name>pixel6a</program_name>
+    <match>Package(Installer|Manager).*install|Added package|Package.*Installed</match>
+    <description>Android package install observed (possible sideload) - LockerSim chain</description>
+    <mitre><id>T1476</id><id>T1404</id></mitre>
+    <group>android,installation,locker,</group>
+  </rule>
+
+  <!-- W3: BOOT_COMPLETED receiver fired -->
+  <rule id="910120" level="7">
+    <program_name>pixel6a</program_name>
+    <match>BootReceiver.*BOOT_COMPLETED</match>
+    <description>Android BOOT_COMPLETED handled by app (persistence)</description>
+    <mitre><id>T1624.001</id></mitre>
+    <group>android,persistence,locker,</group>
+  </rule>
+
+
+  <!-- W4: WorkManager/Beacon run -->
+  <rule id="910130" level="8">
+    <program_name>pixel6a</program_name>
+    <match>BeaconWorker.*(POST|Beacon|200)|WorkManager.*Starting work.*BeaconWorker</match>
+    <description>Beacon worker executed</description>
+    <mitre><id>T1603</id><id>T1437.001</id></mitre>
+    <group>android,c2,locker,</group>
+  </rule>
+
+  <!-- W5: Encryption/decryption activity -->
+  <rule id="910140" level="10">
+    <program_name>pixel6a</program_name>
+    <match>LockerSim.*(ENCRYPT|DECRYPT|encrypt|decrypt)</match>
+    <description>LockerSim AoO activity (encrypt/decrypt)</description>
+    <mitre><id>T1471</id><id>T1486</id></mitre>
+    <group>android,impact,locker,</group>
+  </rule>
+</group>

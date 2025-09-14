@@ -1,0 +1,230 @@
+[1 - Suricata-Main] 2025-09-14 03:32:19 Notice: suricata: This is Suricata version 7.0.11 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-09-14 03:32:19 Info: cpu: CPUs/cores online: 4
+[1 - Suricata-Main] 2025-09-14 03:32:19 Info: device: wlx90de80fb6413: shortening device name to wlx9..6413
+[1 - Suricata-Main] 2025-09-14 03:32:19 Error: af-packet: Problem with config file
+[1 - Suricata-Main] 2025-09-14 03:32:19 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-09-14 03:32:19 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-09-14 03:32:20 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[1 - Suricata-Main] 2025-09-14 03:32:20 Info: logopenfile: fast output device (regular) initialized: /var/log/suricata/fast.log
+[1 - Suricata-Main] 2025-09-14 03:32:20 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-09-14 03:32:20 Error: detect: error parsing signature "alert http $HOME_NET any -> $HOME_NET any (" from file /etc/suricata/rules/local.rules at line 2
+[1 - Suricata-Main] 2025-09-14 03:32:20 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-09-14 03:32:20 Error: detect: error parsing signature ")" from file /etc/suricata/rules/local.rules at line 10
+[1 - Suricata-Main] 2025-09-14 03:32:20 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-09-14 03:32:20 Error: detect: error parsing signature "alert http $HOME_NET any -> $HOME_NET 8000 (" from file /etc/suricata/rules/local.rules at line 13
+[1 - Suricata-Main] 2025-09-14 03:32:20 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-09-14 03:32:20 Error: detect: error parsing signature ")" from file /etc/suricata/rules/local.rules at line 20
+[1 - Suricata-Main] 2025-09-14 03:32:20 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-09-14 03:32:20 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-09-14 03:32:20 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: detect: TCP toserver: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: detect: TCP toclient: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: detect: UDP toserver: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: detect: UDP toclient: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: detect: OTHER toserver: 0 proto groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: detect: OTHER toclient: 0 proto groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: detect: Unique rule groups: 0
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: detect: Builtin MPM "toserver TCP packet": 0
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: detect: Builtin MPM "toclient TCP packet": 0
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: detect: Builtin MPM "toserver TCP stream": 0
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: detect: Builtin MPM "toclient TCP stream": 0
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: detect: Builtin MPM "toserver UDP packet": 0
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: detect: Builtin MPM "toclient UDP packet": 0
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: detect: Builtin MPM "other IP packet": 0
+[1 - Suricata-Main] 2025-09-14 03:32:20 Info: af-packet: wlx90de80fb6413: unable to find af-packet config for interface "wlx90de80fb6413" or "default", using default values
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: af-packet: wlx90de80fb6413: cluster_flow: 4 cores, using 4 threads
+[1 - Suricata-Main] 2025-09-14 03:32:20 Perf: ioctl: wlx90de80fb6413: disabling gro offloading
+[1 - Suricata-Main] 2025-09-14 03:32:20 Warning: af-packet: wlx90de80fb6413: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-09-14 03:32:20 Info: runmodes: wlx90de80fb6413: creating 4 threads
+[16 - W#01-wlx9..6413] 2025-09-14 03:32:20 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[17 - W#02-wlx9..6413] 2025-09-14 03:32:20 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[18 - W#03-wlx9..6413] 2025-09-14 03:32:20 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[19 - W#04-wlx9..6413] 2025-09-14 03:32:20 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[1 - Suricata-Main] 2025-09-14 03:32:20 Notice: threads: Threads created -> W: 4 FM: 1 FR: 1   Engine started.
+[24 - Suricata-Main] 2025-09-14 03:32:28 Notice: suricata: This is Suricata version 7.0.11 RELEASE running in SYSTEM mode
+[24 - Suricata-Main] 2025-09-14 03:32:28 Error: detect-parse: Signature missing required value "sid".
+[24 - Suricata-Main] 2025-09-14 03:32:28 Error: detect: error parsing signature "alert http $HOME_NET any -> $HOME_NET any (" from file /etc/suricata/rules/local.rules at line 2
+[24 - Suricata-Main] 2025-09-14 03:32:28 Error: detect-parse: no rule options.
+[24 - Suricata-Main] 2025-09-14 03:32:28 Error: detect: error parsing signature ")" from file /etc/suricata/rules/local.rules at line 10
+[24 - Suricata-Main] 2025-09-14 03:32:28 Error: detect-parse: Signature missing required value "sid".
+[24 - Suricata-Main] 2025-09-14 03:32:28 Error: detect: error parsing signature "alert http $HOME_NET any -> $HOME_NET 8000 (" from file /etc/suricata/rules/local.rules at line 13
+[24 - Suricata-Main] 2025-09-14 03:32:28 Error: detect-parse: no rule options.
+[24 - Suricata-Main] 2025-09-14 03:32:28 Error: detect: error parsing signature ")" from file /etc/suricata/rules/local.rules at line 20
+[24 - Suricata-Main] 2025-09-14 03:32:28 Warning: detect: 1 rule files specified, but no rules were loaded!
+[24 - Suricata-Main] 2025-09-14 03:32:28 Error: suricata: Loading signatures failed.
+[45 - Suricata-Main] 2025-09-14 03:33:00 Notice: suricata: This is Suricata version 7.0.11 RELEASE running in SYSTEM mode
+[45 - Suricata-Main] 2025-09-14 03:33:00 Error: detect-parse: Signature missing required value "sid".
+[45 - Suricata-Main] 2025-09-14 03:33:00 Error: detect: error parsing signature "alert http $HOME_NET any -> $HOME_NET any (" from file /etc/suricata/rules/local.rules at line 2
+[45 - Suricata-Main] 2025-09-14 03:33:00 Error: detect-parse: no rule options.
+[45 - Suricata-Main] 2025-09-14 03:33:00 Error: detect: error parsing signature ")" from file /etc/suricata/rules/local.rules at line 10
+[45 - Suricata-Main] 2025-09-14 03:33:00 Error: detect-parse: Signature missing required value "sid".
+[45 - Suricata-Main] 2025-09-14 03:33:00 Error: detect: error parsing signature "alert http $HOME_NET any -> $HOME_NET 8000 (" from file /etc/suricata/rules/local.rules at line 13
+[45 - Suricata-Main] 2025-09-14 03:33:00 Error: detect-parse: no rule options.
+[45 - Suricata-Main] 2025-09-14 03:33:00 Error: detect: error parsing signature ")" from file /etc/suricata/rules/local.rules at line 20
+[45 - Suricata-Main] 2025-09-14 03:33:00 Warning: detect: 1 rule files specified, but no rules were loaded!
+[45 - Suricata-Main] 2025-09-14 03:33:00 Error: suricata: Loading signatures failed.
+[1 - Suricata-Main] 2025-09-14 03:33:03 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-09-14 03:33:03 Info: suricata: time elapsed 43.523s
+[21 - FR#01] 2025-09-14 03:33:04 Perf: flow-manager: 1 flows processed
+[16 - W#01-wlx9..6413] 2025-09-14 03:33:04 Perf: af-packet: wlx90de80fb6413: (W#01-wlx9..6413) kernel: Packets 0, dropped 0
+[17 - W#02-wlx9..6413] 2025-09-14 03:33:04 Perf: af-packet: wlx90de80fb6413: (W#02-wlx9..6413) kernel: Packets 324, dropped 0
+[18 - W#03-wlx9..6413] 2025-09-14 03:33:04 Perf: af-packet: wlx90de80fb6413: (W#03-wlx9..6413) kernel: Packets 0, dropped 0
+[19 - W#04-wlx9..6413] 2025-09-14 03:33:04 Perf: af-packet: wlx90de80fb6413: (W#04-wlx9..6413) kernel: Packets 4, dropped 0
+[1 - Suricata-Main] 2025-09-14 03:33:04 Info: counters: Alerts: 0
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: ippair: ippair memory usage: 414144 bytes, maximum: 16777216
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: host: host memory usage: 398144 bytes, maximum: 16777216
+[1 - Suricata-Main] 2025-09-14 03:33:04 Notice: device: wlx90de80fb6413: packets: 328, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: ioctl: wlx90de80fb6413: restoring gro offloading
+[1 - Suricata-Main] 2025-09-14 03:33:04 Notice: suricata: This is Suricata version 7.0.11 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-09-14 03:33:04 Info: cpu: CPUs/cores online: 4
+[1 - Suricata-Main] 2025-09-14 03:33:04 Info: device: wlx90de80fb6413: shortening device name to wlx9..6413
+[1 - Suricata-Main] 2025-09-14 03:33:04 Error: af-packet: Problem with config file
+[1 - Suricata-Main] 2025-09-14 03:33:04 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-09-14 03:33:04 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-09-14 03:33:04 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[1 - Suricata-Main] 2025-09-14 03:33:04 Info: logopenfile: fast output device (regular) initialized: /var/log/suricata/fast.log
+[1 - Suricata-Main] 2025-09-14 03:33:04 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-09-14 03:33:04 Error: detect: error parsing signature "alert http $HOME_NET any -> $HOME_NET any (" from file /etc/suricata/rules/local.rules at line 2
+[1 - Suricata-Main] 2025-09-14 03:33:04 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-09-14 03:33:04 Error: detect: error parsing signature ")" from file /etc/suricata/rules/local.rules at line 10
+[1 - Suricata-Main] 2025-09-14 03:33:04 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-09-14 03:33:04 Error: detect: error parsing signature "alert http $HOME_NET any -> $HOME_NET 8000 (" from file /etc/suricata/rules/local.rules at line 13
+[1 - Suricata-Main] 2025-09-14 03:33:04 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-09-14 03:33:04 Error: detect: error parsing signature ")" from file /etc/suricata/rules/local.rules at line 20
+[1 - Suricata-Main] 2025-09-14 03:33:04 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-09-14 03:33:04 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-09-14 03:33:04 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: detect: TCP toserver: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: detect: TCP toclient: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: detect: UDP toserver: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: detect: UDP toclient: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: detect: OTHER toserver: 0 proto groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: detect: OTHER toclient: 0 proto groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: detect: Unique rule groups: 0
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: detect: Builtin MPM "toserver TCP packet": 0
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: detect: Builtin MPM "toclient TCP packet": 0
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: detect: Builtin MPM "toserver TCP stream": 0
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: detect: Builtin MPM "toclient TCP stream": 0
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: detect: Builtin MPM "toserver UDP packet": 0
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: detect: Builtin MPM "toclient UDP packet": 0
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: detect: Builtin MPM "other IP packet": 0
+[1 - Suricata-Main] 2025-09-14 03:33:04 Info: af-packet: wlx90de80fb6413: unable to find af-packet config for interface "wlx90de80fb6413" or "default", using default values
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: af-packet: wlx90de80fb6413: cluster_flow: 4 cores, using 4 threads
+[1 - Suricata-Main] 2025-09-14 03:33:04 Perf: ioctl: wlx90de80fb6413: disabling gro offloading
+[1 - Suricata-Main] 2025-09-14 03:33:04 Warning: af-packet: wlx90de80fb6413: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-09-14 03:33:04 Info: runmodes: wlx90de80fb6413: creating 4 threads
+[16 - W#01-wlx9..6413] 2025-09-14 03:33:04 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[17 - W#02-wlx9..6413] 2025-09-14 03:33:04 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[18 - W#03-wlx9..6413] 2025-09-14 03:33:04 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[19 - W#04-wlx9..6413] 2025-09-14 03:33:05 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[1 - Suricata-Main] 2025-09-14 03:33:05 Notice: threads: Threads created -> W: 4 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-09-14 05:20:27 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-09-14 05:20:27 Info: suricata: time elapsed 6442.724s
+[21 - FR#01] 2025-09-14 05:20:28 Perf: flow-manager: 34 flows processed
+[16 - W#01-wlx9..6413] 2025-09-14 05:20:28 Perf: af-packet: wlx90de80fb6413: (W#01-wlx9..6413) kernel: Packets 204, dropped 0
+[17 - W#02-wlx9..6413] 2025-09-14 05:20:28 Perf: af-packet: wlx90de80fb6413: (W#02-wlx9..6413) kernel: Packets 11590, dropped 0
+[18 - W#03-wlx9..6413] 2025-09-14 05:20:28 Perf: af-packet: wlx90de80fb6413: (W#03-wlx9..6413) kernel: Packets 237, dropped 0
+[19 - W#04-wlx9..6413] 2025-09-14 05:20:28 Perf: af-packet: wlx90de80fb6413: (W#04-wlx9..6413) kernel: Packets 1006, dropped 0
+[1 - Suricata-Main] 2025-09-14 05:20:28 Info: counters: Alerts: 0
+[1 - Suricata-Main] 2025-09-14 05:20:28 Perf: ippair: ippair memory usage: 414144 bytes, maximum: 16777216
+[1 - Suricata-Main] 2025-09-14 05:20:28 Perf: host: host memory usage: 398144 bytes, maximum: 16777216
+[1 - Suricata-Main] 2025-09-14 05:20:28 Notice: device: wlx90de80fb6413: packets: 13037, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-09-14 05:20:28 Perf: ioctl: wlx90de80fb6413: restoring gro offloading
+[1 - Suricata-Main] 2025-09-14 05:20:52 Notice: suricata: This is Suricata version 7.0.11 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-09-14 05:20:52 Info: cpu: CPUs/cores online: 4
+[1 - Suricata-Main] 2025-09-14 05:20:52 Info: device: wlx90de80fb6413: shortening device name to wlx9..6413
+[1 - Suricata-Main] 2025-09-14 05:20:52 Error: af-packet: Problem with config file
+[1 - Suricata-Main] 2025-09-14 05:20:52 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-09-14 05:20:52 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-09-14 05:20:52 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[1 - Suricata-Main] 2025-09-14 05:20:52 Info: logopenfile: fast output device (regular) initialized: /var/log/suricata/fast.log
+[1 - Suricata-Main] 2025-09-14 05:20:52 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-09-14 05:20:52 Error: detect: error parsing signature "alert http $HOME_NET any -> $HOME_NET any (" from file /etc/suricata/rules/local.rules at line 2
+[1 - Suricata-Main] 2025-09-14 05:20:52 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-09-14 05:20:52 Error: detect: error parsing signature ")" from file /etc/suricata/rules/local.rules at line 10
+[1 - Suricata-Main] 2025-09-14 05:20:52 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-09-14 05:20:52 Error: detect: error parsing signature "alert http $HOME_NET any -> $HOME_NET 8000 (" from file /etc/suricata/rules/local.rules at line 13
+[1 - Suricata-Main] 2025-09-14 05:20:52 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-09-14 05:20:52 Error: detect: error parsing signature ")" from file /etc/suricata/rules/local.rules at line 20
+[1 - Suricata-Main] 2025-09-14 05:20:52 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-09-14 05:20:52 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-09-14 05:20:52 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: detect: TCP toserver: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: detect: TCP toclient: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: detect: UDP toserver: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: detect: UDP toclient: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: detect: OTHER toserver: 0 proto groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: detect: OTHER toclient: 0 proto groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: detect: Unique rule groups: 0
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: detect: Builtin MPM "toserver TCP packet": 0
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: detect: Builtin MPM "toclient TCP packet": 0
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: detect: Builtin MPM "toserver TCP stream": 0
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: detect: Builtin MPM "toclient TCP stream": 0
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: detect: Builtin MPM "toserver UDP packet": 0
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: detect: Builtin MPM "toclient UDP packet": 0
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: detect: Builtin MPM "other IP packet": 0
+[1 - Suricata-Main] 2025-09-14 05:20:52 Info: af-packet: wlx90de80fb6413: unable to find af-packet config for interface "wlx90de80fb6413" or "default", using default values
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: af-packet: wlx90de80fb6413: cluster_flow: 4 cores, using 4 threads
+[1 - Suricata-Main] 2025-09-14 05:20:52 Perf: ioctl: wlx90de80fb6413: disabling gro offloading
+[1 - Suricata-Main] 2025-09-14 05:20:52 Warning: af-packet: wlx90de80fb6413: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-09-14 05:20:52 Info: runmodes: wlx90de80fb6413: creating 4 threads
+[16 - W#01-wlx9..6413] 2025-09-14 05:20:52 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[17 - W#02-wlx9..6413] 2025-09-14 05:20:52 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[18 - W#03-wlx9..6413] 2025-09-14 05:20:52 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[19 - W#04-wlx9..6413] 2025-09-14 05:20:52 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[1 - Suricata-Main] 2025-09-14 05:20:52 Notice: threads: Threads created -> W: 4 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-09-14 05:33:03 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-09-14 05:33:03 Info: suricata: time elapsed 731.372s
+[21 - FR#01] 2025-09-14 05:33:04 Perf: flow-manager: 5 flows processed
+[16 - W#01-wlx9..6413] 2025-09-14 05:33:04 Perf: af-packet: wlx90de80fb6413: (W#01-wlx9..6413) kernel: Packets 0, dropped 0
+[17 - W#02-wlx9..6413] 2025-09-14 05:33:04 Perf: af-packet: wlx90de80fb6413: (W#02-wlx9..6413) kernel: Packets 3228, dropped 0
+[18 - W#03-wlx9..6413] 2025-09-14 05:33:04 Perf: af-packet: wlx90de80fb6413: (W#03-wlx9..6413) kernel: Packets 0, dropped 0
+[19 - W#04-wlx9..6413] 2025-09-14 05:33:04 Perf: af-packet: wlx90de80fb6413: (W#04-wlx9..6413) kernel: Packets 100, dropped 0
+[1 - Suricata-Main] 2025-09-14 05:33:04 Info: counters: Alerts: 0
+[1 - Suricata-Main] 2025-09-14 05:33:04 Perf: ippair: ippair memory usage: 414144 bytes, maximum: 16777216
+[1 - Suricata-Main] 2025-09-14 05:33:04 Perf: host: host memory usage: 398144 bytes, maximum: 16777216
+[1 - Suricata-Main] 2025-09-14 05:33:04 Notice: device: wlx90de80fb6413: packets: 3328, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-09-14 05:33:04 Perf: ioctl: wlx90de80fb6413: restoring gro offloading
+[1 - Suricata-Main] 2025-09-14 05:33:12 Notice: suricata: This is Suricata version 7.0.11 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-09-14 05:33:12 Info: cpu: CPUs/cores online: 4
+[1 - Suricata-Main] 2025-09-14 05:33:12 Info: device: wlx90de80fb6413: shortening device name to wlx9..6413
+[1 - Suricata-Main] 2025-09-14 05:33:12 Error: af-packet: Problem with config file
+[1 - Suricata-Main] 2025-09-14 05:33:12 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-09-14 05:33:12 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-09-14 05:33:12 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[1 - Suricata-Main] 2025-09-14 05:33:12 Info: logopenfile: fast output device (regular) initialized: /var/log/suricata/fast.log
+[1 - Suricata-Main] 2025-09-14 05:33:12 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-09-14 05:33:12 Error: detect: error parsing signature "alert http $HOME_NET any -> $HOME_NET any (" from file /etc/suricata/rules/local.rules at line 2
+[1 - Suricata-Main] 2025-09-14 05:33:12 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-09-14 05:33:12 Error: detect: error parsing signature ")" from file /etc/suricata/rules/local.rules at line 10
+[1 - Suricata-Main] 2025-09-14 05:33:12 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-09-14 05:33:12 Error: detect: error parsing signature "alert http $HOME_NET any -> $HOME_NET 8000 (" from file /etc/suricata/rules/local.rules at line 13
+[1 - Suricata-Main] 2025-09-14 05:33:12 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-09-14 05:33:12 Error: detect: error parsing signature ")" from file /etc/suricata/rules/local.rules at line 20
+[1 - Suricata-Main] 2025-09-14 05:33:12 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-09-14 05:33:12 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-09-14 05:33:12 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: detect: TCP toserver: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: detect: TCP toclient: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: detect: UDP toserver: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: detect: UDP toclient: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: detect: OTHER toserver: 0 proto groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: detect: OTHER toclient: 0 proto groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: detect: Unique rule groups: 0
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: detect: Builtin MPM "toserver TCP packet": 0
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: detect: Builtin MPM "toclient TCP packet": 0
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: detect: Builtin MPM "toserver TCP stream": 0
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: detect: Builtin MPM "toclient TCP stream": 0
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: detect: Builtin MPM "toserver UDP packet": 0
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: detect: Builtin MPM "toclient UDP packet": 0
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: detect: Builtin MPM "other IP packet": 0
+[1 - Suricata-Main] 2025-09-14 05:33:12 Info: af-packet: wlx90de80fb6413: unable to find af-packet config for interface "wlx90de80fb6413" or "default", using default values
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: af-packet: wlx90de80fb6413: cluster_flow: 4 cores, using 4 threads
+[1 - Suricata-Main] 2025-09-14 05:33:12 Perf: ioctl: wlx90de80fb6413: disabling gro offloading
+[1 - Suricata-Main] 2025-09-14 05:33:12 Warning: af-packet: wlx90de80fb6413: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-09-14 05:33:12 Info: runmodes: wlx90de80fb6413: creating 4 threads
+[16 - W#01-wlx9..6413] 2025-09-14 05:33:12 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[17 - W#02-wlx9..6413] 2025-09-14 05:33:12 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[18 - W#03-wlx9..6413] 2025-09-14 05:33:12 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[19 - W#04-wlx9..6413] 2025-09-14 05:33:12 Perf: af-packet: wlx90de80fb6413: rx ring: block_size=131072 block_nr=37 frame_size=9296 frame_nr=518
+[1 - Suricata-Main] 2025-09-14 05:33:12 Notice: threads: Threads created -> W: 4 FM: 1 FR: 1   Engine started.
