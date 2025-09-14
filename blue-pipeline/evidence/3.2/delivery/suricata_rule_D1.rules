@@ -1,0 +1,10 @@
+# D1 — APK delivery via HTTP GET
+# Detects retrieval of /app-debug.apk from the lab web server (10.42.0.1:8000)
+alert http any any -> 10.42.0.1 8000 (
+    msg:"D1 APK delivery (GET /app-debug.apk)";
+    flow:to_server,established;
+    http.method; content:"GET"; nocase;
+    http.uri; content:"/app-debug.apk"; fast_pattern;
+    classtype:policy-violation;
+    sid:2000010; rev:1;
+)

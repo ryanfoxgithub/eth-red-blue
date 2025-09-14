@@ -1,4 +1,4 @@
-filebeat.inputs: []
+# config/filebeat/filebeat.yml
 
 filebeat.modules:
   - module: suricata
@@ -6,12 +6,26 @@ filebeat.modules:
       enabled: true
       var.paths: ["/var/log/suricata/eve.json"]
 
-setup.kibana.host: "http://kibana:5601"
-setup.dashboards.enabled: true
+# Also ship Wazuh alerts from the manager volume
+filebeat.inputs:
+  - type: log
+    id: wazuh-alerts
+    enabled: true
+    paths: ["/var/ossec/logs/alerts/alerts.json"]
+    json.keys_under_root: true
+    json.add_error_key: true
+    fields:
+      event.module: wazuh
+    fields_under_root: true
 
+# Ship to secured Elasticsearch (creds come from container env)
 output.elasticsearch:
   hosts: ["http://elasticsearch:9200"]
+  username: ${ELASTIC_USERNAME}
+  password: ${ELASTIC_PASSWORD}
 
 processors:
   - add_tags:
       tags: ["lab-net"]
+
+logging.to_files: false

@@ -59,6 +59,7 @@ outputs:
       community-id: true        # adds community_id used by many SIEM parsers
       types:
         - alert:
+            metadata: yes
             tagged-packets: false
         - http
         - http2

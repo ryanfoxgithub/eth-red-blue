@@ -1,20 +1,20 @@
-# N1 – Locker beacon (POST + UA + path)
-alert http $HOME_NET any -> $HOME_NET any (
-  msg:"LockerSim HTTP beacon (UA+path)";
-  flow:to_server,established;
-  http.method; content:"POST"; nocase;
-  http.uri; content:"/beacon";
-  http.user_agent; content:"Locker-Beacon/1.0";
-  classtype:trojan-activity;
-  sid:420001; rev:7;
-)
-
-# D1 – APK download (delivery)
-alert http $HOME_NET any -> $HOME_NET 8000 (
+# D1 – APK download to lab host (delivery)
+alert http any any -> 10.42.0.1 8000 (
   msg:"APK download to handset (lab host)";
   flow:to_server,established;
-  http.method; content:"GET"; nocase;
-  http.uri; content:"/app-debug.apk"; nocase;
+  http.method; content:"GET";
+  http.uri;    content:"/app-debug.apk"; nocase;
   classtype:policy-violation;
-  sid:420010; rev:2;
+  sid:420010; rev:3;
+)
+
+# N1 – Locker beacon (POST + UA + path)
+alert http any any -> 10.42.0.1 8000 (
+  msg:"LockerSim HTTP beacon (UA+path)";
+  flow:to_server,established;
+  http.method;     content:"POST";
+  http.uri;        content:"/beacon";
+  http.user_agent; content:"Locker-Beacon/1.0"; nocase;
+  classtype:trojan-activity;
+  sid:420001; rev:7;
 )

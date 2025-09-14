@@ -1,0 +1,26 @@
+services:
+  elasticsearch:
+    environment:
+      - xpack.security.enabled=true
+      - xpack.security.http.ssl.enabled=false
+      - xpack.security.transport.ssl.enabled=false
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD:-ChangeMe!123}
+
+  kibana:
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - ELASTICSEARCH_USERNAME=kibana_system
+      - ELASTICSEARCH_PASSWORD=${KIBANA_SYSTEM_PASSWORD:-SecretPass}
+      - XPACK_ENCRYPTEDSAVEDOBJECTS_ENCRYPTIONKEY=${KIBANA_ENCRYPTION_KEY}
+      - XPACK_SECURITY_ENCRYPTIONKEY=${KIBANA_SECURITY_KEY}
+      - XPACK_REPORTING_ENCRYPTIONKEY=${KIBANA_REPORTING_KEY}
+      - SERVER_PUBLICBASEURL=http://localhost:5601
+
+  filebeat:
+    environment:
+      - ELASTIC_USERNAME=elastic
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD:-ChangeMe!123}
+    volumes:
+      - ./config/filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - ./suricata/log:/var/log/suricata:ro
+      - wazuh-manager-data:/var/ossec:ro
