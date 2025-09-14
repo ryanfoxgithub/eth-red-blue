@@ -1,0 +1,47 @@
+<!-- config/wazuh/manager/local_rules.xml -->
+
+<group name="local">
+  <!-- W1: Android package install observed (start) -->
+  <rule id="910110" level="8">
+    <group>local,locker,android,installation,</group>
+    <match>pixel6a: .*Package(Installer|Manager).*install</match>
+    <description>Android package install observed (possible sideload) - LockerSim chain</description>
+    <mitre>
+      <id>T1632</id><id>T1404</id>
+    </mitre>
+  </rule>
+
+  <!-- W2: Android package install success -->
+  <rule id="910111" level="8">
+    <group>local,locker,android,installation,</group>
+    <match>pixel6a: .*(Added package|Package.*Installed)</match>
+    <description>Android package install completed - LockerSim chain</description>
+    <mitre>
+      <id>T1632</id><id>T1404</id>
+    </mitre>
+  </rule>
+
+  <!-- W3: BOOT_COMPLETED receiver fired -->
+  <rule id="910120" level="7">
+    <group>local,locker,android,persistence,</group>
+    <match>pixel6a: .*BootReceiver.*BOOT_COMPLETED</match>
+    <description>Android BOOT_COMPLETED handled by app (persistence)</description>
+    <mitre><id>T1624.001</id></mitre>
+  </rule>
+
+  <!-- W4: Beacon worker executed (post‑boot / scheduled) -->
+  <rule id="910130" level="8">
+    <group>local,locker,android,c2,</group>
+    <match>pixel6a: .*BeaconWorker.*(POST|Beacon|-> 200)</match>
+    <description>Beacon worker executed</description>
+    <mitre><id>T1603</id><id>T1437.001</id></mitre>
+  </rule>
+
+  <!-- W5: Encryption / decryption activity (AoO) -->
+  <rule id="910140" level="10">
+    <group>local,locker,android,impact,</group>
+    <match>pixel6a: .*LockerSim.*(ENCRYPT|DECRYPT|encrypt|decrypt)</match>
+    <description>LockerSim AoO activity (encrypt/decrypt)</description>
+    <mitre><id>T1471</id><id>T1486</id></mitre>
+  </rule>
+</group>

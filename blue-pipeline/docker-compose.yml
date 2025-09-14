@@ -31,9 +31,9 @@ services:
     privileged: true                         # gives pcap/af-packet access
     command: ["-i","${AP_IFACE}","-vv"]
     volumes:
-      -  /var/log/suricata:/var/log/suricata
-      - ./suricata/suricata.yaml:/etc/suricata/suricata.yaml:ro
-      - ./suricata/rules:/etc/suricata/rules:ro
+      - ./config/suricata/suricata.yaml:/etc/suricata/suricata.yaml:ro
+      - ./config/suricata/rules:/etc/suricata/rules:ro
+      - ./suricata/log:/var/log/suricata
 
   # Filebeat parses Suricata EVE JSON and ships to ES
   filebeat:
@@ -47,8 +47,26 @@ services:
     user: root
     command: ["--strict.perms=false", "-e"]
     volumes:
-      - ./filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
-      - /var/log/suricata:/var/log/suricata
+      - ./config/filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - ./suricata/log:/var/log/suricata:ro
+      - wazuh-manager-data:/var/ossec:ro
+
+  wazuh-manager:
+    image: wazuh/wazuh-manager:4.12.0
+    restart: unless-stopped
+    ports:
+      - "1514:1514/tcp"     # agent connection (TCP)
+      - "1515:1515/tcp"     # agent enrollment
+      - "514:514/udp"       # optional syslog collector
+    volumes:
+      - wazuh-manager-data:/var/ossec                # persist manager state/logs
+      - ./config/wazuh/manager/local_rules.xml:/var/ossec/etc/rules/local_rules.xml:ro
+    healthcheck:
+      test: ["CMD-SHELL", "test -f /var/ossec/bin/wazuh-maild || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 10
 
 volumes:
   esdata:
+  wazuh-manager-data:
