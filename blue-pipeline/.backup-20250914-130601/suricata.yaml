@@ -28,7 +28,7 @@ threading:
 # ---- Rules (local only is fine for the unit) ----
 default-rule-path: /etc/suricata/rules
 rule-files:
-  - local.rules            # mount/ship your custom rules here (e.g., beacon SID 420001)
+  - local.rules            # mount/ship my custom rules here (e.g., beacon SID 420001)
 
 classification-file: /etc/suricata/classification.config
 reference-config-file: /etc/suricata/reference.config

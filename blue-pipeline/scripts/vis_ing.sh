@@ -5,7 +5,7 @@ set -Eeuo pipefail
 shopt -s lastpipe
 
 # ---------- Config (override with env vars if needed) ----------
-PIPELINE_DIR="${PIPELINE_DIR:-$HOME/Developer/git/eth-red-blue/blue-pipeline}"
+PIPELINE_DIR="${PIPELINE_DIR:-$HOME/Developer/git/eth-red-blue/blue-pipeline/config}"
 EVE_PATH="${EVE_PATH:-$PIPELINE_DIR/suricata/log/eve.json}"
 ES_URL="${ES_URL:-http://localhost:9200}"
 INDEX_PATTERN="${INDEX_PATTERN:-filebeat*,logs-*}"
