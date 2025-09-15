@@ -1,0 +1,110 @@
+.
+├── compose.txt
+├── config
+│   ├── evidence
+│   │   └── ingest-2025-09-14_131301
+│   │       ├── compose_ps.txt
+│   │       ├── es_count.json
+│   │       ├── es_docs.json
+│   │       └── eve_sample.json
+│   ├── filebeat
+│   │   └── filebeat.yml
+│   ├── suricata
+│   │   ├── log
+│   │   │   ├── eve.json
+│   │   │   ├── fast.log
+│   │   │   ├── stats.log
+│   │   │   └── suricata.log
+│   │   ├── rules
+│   │   │   └── local.rules
+│   │   └── suricata.yaml
+│   └── wazuh
+│       ├── agent
+│       └── manager
+│           └── local_rules.xml
+├── docker-compose.override.yml
+├── docker-compose.yml
+├── docs
+│   ├── assets
+│   │   └── 3.2
+│   └── snippets
+├── evidence
+│   ├── 3.2
+│   │   ├── aoo
+│   │   │   ├── run.txt
+│   │   │   └── w5_alerts.json
+│   │   ├── c2
+│   │   │   ├── H3.ndjson
+│   │   │   ├── n1_alert.json
+│   │   │   ├── pcap
+│   │   │   ├── run.txt
+│   │   │   └── w4_alerts.json
+│   │   ├── correlation
+│   │   │   ├── C1.ndjson
+│   │   │   └── run.txt
+│   │   ├── delivery
+│   │   │   ├── d1_alert.json
+│   │   │   ├── H1.ndjson
+│   │   │   ├── run.txt
+│   │   │   └── suricata_rule_D1.rules
+│   │   ├── exploitation
+│   │   │   ├── hunt_H2.kql
+│   │   │   ├── run.txt
+│   │   │   └── w1w2_alerts.json
+│   │   └── installation
+│   │       ├── README.md
+│   │       ├── run.txt
+│   │       └── w3_boot.json
+│   ├── ingest-2025-09-13_230609
+│   │   ├── compose_ps.txt
+│   │   ├── es_count.json
+│   │   ├── es_docs.json
+│   │   └── eve_sample.json
+│   ├── ingest-2025-09-13_230933
+│   │   ├── compose_ps.txt
+│   │   ├── es_count.json
+│   │   ├── es_docs.json
+│   │   └── eve_sample.json
+│   ├── ingest-2025-09-13_234909
+│   │   ├── compose_ps.txt
+│   │   ├── es_count.json
+│   │   └── eve_sample.json
+│   ├── ingest-2025-09-14_094914
+│   │   ├── compose_ps.txt
+│   │   ├── es_count.json
+│   │   ├── es_docs.json
+│   │   └── eve_sample.json
+│   ├── ingest-2025-09-14_122513
+│   ├── ingest-2025-09-14_122547
+│   ├── ingest-2025-09-14_122627
+│   ├── ingest-2025-09-14_122709
+│   ├── ingest-2025-09-14_122723
+│   ├── ingest-2025-09-14_122757
+│   └── sample_docs.txt
+├── kibana
+│   └── exports
+├── scripts
+│   ├── evidence
+│   │   └── 3.2
+│   │       ├── aoo
+│   │       │   └── run.txt
+│   │       ├── c2
+│   │       │   ├── n1_alert.json
+│   │       │   └── run.txt
+│   │       ├── correlation
+│   │       │   └── run.txt
+│   │       ├── delivery
+│   │       │   ├── d1_alert.json
+│   │       │   └── run.txt
+│   │       ├── persistence
+│   │       │   └── run.txt
+│   │       └── sideload
+│   │           ├── run.txt
+│   │           └── w1w2_alerts.json
+│   ├── logcat_to_syslog.sh
+│   ├── make_evidence_3_2.sh
+│   └── vis_ing.sh
+├── suricata  [error opening dir]
+└── tree.txt
+
+46 directories, 62 files
