@@ -4,7 +4,7 @@
 > A complete, reproducible red/blue lab that simulates a mobile ransomware campaign against a **physical Google Pixel 6a** on an **isolated Wi‑Fi AP**.  
 > The **Red Team** delivers and sideloads a lab APK (“LockerSim”) that encrypts a **scoped** photo folder and sends benign JSON beacons.  
 > The **Blue Team** ingests **Suricata EVE** and **ADB logcat --> Wazuh**, engineers detections (D1/N1/W1–W5), and correlates _boot --> first beacon_ in Elastic Security.  
-> Everything you need to **re‑run the exercise end‑to‑end**, code, rules, KQL/EQL, and helper scripts, is in this repo.
+> Everything you need to **re‑run the exercise end‑to‑end** - code, rules, KQL/EQL, and helper scripts, is in this repo.
 
 ---
 
@@ -37,7 +37,7 @@
 
 ## Introduction
 
-This lab demonstrates a realistic mobile ransomware chain-delivery, sideload/exploitation, installation/persistence, C2, and actions‑on‑objective-against the author’s **own** Pixel 6a on a dedicated lab SSID. The Blue Team side implements network and handset telemetry, custom detections, and a time‑bound correlation linking **BOOT_COMPLETED --> first beacon**. All detections are designed to be **auditable** (JSON/PCAP/Kibana exports) and are scoped to keep the exercise ethical and safe (no exfiltration; file encryption limited to an app‑private directory or a user‑granted tree).
+This lab demonstrates a realistic mobile ransomware chain-delivery, sideload/exploitation, installation/persistence, C2, and actions‑on‑objective, against the author’s **own** Pixel 6a on a dedicated lab SSID. The Blue Team side implements network and handset telemetry, custom detections, and a time‑bound correlation linking **BOOT_COMPLETED --> first beacon**. All detections are designed to be **auditable** (JSON/PCAP/Kibana exports) and are scoped to keep the exercise ethical and safe (no exfiltration; file encryption limited to an app‑private directory or a user‑granted tree).
 
 ---
 
