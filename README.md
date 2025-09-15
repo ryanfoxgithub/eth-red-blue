@@ -1,10 +1,10 @@
-# eth‑red‑blue - Mobile Ransomware Red/Blue Lab
+# eth‑red‑blue — Mobile Ransomware Red/Blue Lab
 
 > **Elevator pitch**  
 > A complete, reproducible red/blue lab that simulates a mobile ransomware campaign against a **physical Google Pixel 6a** on an **isolated Wi‑Fi AP**.  
 > The **Red Team** delivers and sideloads a lab APK (“LockerSim”) that encrypts a **scoped** photo folder and sends benign JSON beacons.  
 > The **Blue Team** ingests **Suricata EVE** and **ADB logcat --> Wazuh**, engineers detections (D1/N1/W1–W5), and correlates _boot --> first beacon_ in Elastic Security.  
-> Everything you need to **re‑run the exercise end‑to‑end** - code, rules, KQL/EQL, and helper scripts, is in this repo.
+> Everything you need to **re‑run the exercise end‑to‑end**—code, rules, KQL/EQL, and helper scripts—is in this repo.
 
 ---
 
@@ -37,7 +37,7 @@
 
 ## Introduction
 
-This lab demonstrates a realistic mobile ransomware chain-delivery, sideload/exploitation, installation/persistence, C2, and actions‑on‑objective, against the author’s **own** Pixel 6a on a dedicated lab SSID. The Blue Team side implements network and handset telemetry, custom detections, and a time‑bound correlation linking **BOOT_COMPLETED --> first beacon**. All detections are designed to be **auditable** (JSON/PCAP/Kibana exports) and are scoped to keep the exercise ethical and safe (no exfiltration; file encryption limited to an app‑private directory or a user‑granted tree).
+This lab demonstrates a realistic mobile ransomware chain—delivery, sideload/exploitation, installation/persistence, C2, and actions‑on‑objective—against the author’s **own** Pixel 6a on a dedicated lab SSID. The Blue Team side implements network and handset telemetry, custom detections, and a time‑bound correlation linking **BOOT_COMPLETED --> first beacon**. All detections are designed to be **auditable** (JSON/PCAP/Kibana exports) and are scoped to keep the exercise ethical and safe (no exfiltration; file encryption limited to an app‑private directory or a user‑granted tree).
 
 ---
 
@@ -74,7 +74,7 @@ flowchart TD
 - **Docker** + **Docker Compose**.
 - **ADB / Android Platform Tools** on the host.
 - **Python 3.10+** (for tiny utility scripts).
-- A dual‑band USB Wi‑Fi adapter (hosted AP) - lab SSID without Internet.
+- A dual‑band USB Wi‑Fi adapter (hosted AP) — lab SSID without Internet.
 - The phone (Pixel 6a) connects to the AP; the host is also on the AP and additionally on Ethernet for admin.
 
 ### Clone & compose
@@ -107,7 +107,7 @@ config/suricata/rules/local.rules
 Two rules are used in this project:
 
 ```conf
-# N1 - Locker beacon (POST + UA + path)
+# N1 — Locker beacon (POST + UA + path)
 alert http $HOME_NET any -> $HOME_NET any (
   msg:"LockerSim HTTP beacon (UA+path)";
   flow:to_server,established;
@@ -118,7 +118,7 @@ alert http $HOME_NET any -> $HOME_NET any (
   sid:420001; rev:7;
 )
 
-# D1 - APK download to handset (delivery)
+# D1 — APK download to handset (delivery)
 alert http $HOME_NET any -> $HOME_NET 8000 (
   msg:"APK download to handset (lab host)";
   flow:to_server,established;
@@ -201,10 +201,10 @@ Update `MainActivity.kt` / `BeaconWorker` to point to your lab host (e.g., `http
 See the two rules above (N1, D1). Confirm they **load** (no errors) and then trigger them with:
 
 ```bash
-# D1 - generate a GET for the APK
+# D1 — generate a GET for the APK
 curl -s -o /dev/null http://10.42.0.1:8000/app-debug.apk
 
-# N1 - generate a beacon POST (host side)
+# N1 — generate a beacon POST (host side)
 curl -s -X POST http://10.42.0.1:8000/beacon \
   -H 'User-Agent: Locker-Beacon/1.0 (SIMULATION)' \
   -H 'Content-Type: application/json' \
