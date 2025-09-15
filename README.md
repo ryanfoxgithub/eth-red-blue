@@ -415,6 +415,3 @@ Host ingest receipts (counts/docs/sample EVE) are stored under `config/evidence/
 - Open‑source ecosystems behind Suricata, Elastic Stack, and Wazuh.
 - Android Open Source Project & Jetpack libraries used by LockerSim.
 
----
-
-> _Tip_: If you’re marking this project, the quickest sanity check is to open **Kibana --> Discover** on the Filebeat data view, run **H1** and **H3** KQL snippets, and then tail **/var/ossec/logs/alerts/alerts.json** for **9101xx** rule hits while the student runs the validation flow.
